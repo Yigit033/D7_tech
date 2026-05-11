@@ -78,7 +78,7 @@ export default function ProjectsClient() {
                 exit={{ opacity: 0 }}
                 className="text-center py-20 text-slate-600 font-mono text-sm"
               >
-                // No projects in this category yet.
+                {'// No projects in this category yet.'}
               </motion.div>
             ) : (
               <motion.div

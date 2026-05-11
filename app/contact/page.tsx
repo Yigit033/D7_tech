@@ -139,7 +139,7 @@ export default function ContactPage() {
             <div className="mt-10 p-5 rounded-sm bg-[#0a0f1e] border border-[#1a2540] relative">
               <span className="absolute top-2.5 left-2.5 w-3 h-3 border-t border-l border-sky-500/20" aria-hidden="true" />
               <p className="font-mono text-[10px] tracking-widest text-sky-500/50 uppercase mb-2" aria-hidden="true">
-                // Response Time
+                {'// Response Time'}
               </p>
               <p className="text-sm text-slate-400">
                 We typically respond within 1–2 business days. For urgent matters, reach out via LinkedIn.
@@ -166,7 +166,7 @@ export default function ContactPage() {
                     Thank you for reaching out. We will get back to you shortly.
                   </p>
                   <span className="font-mono text-[10px] text-sky-500/50 tracking-widest uppercase" aria-hidden="true">
-                    // MESSAGE RECEIVED
+                    {'// MESSAGE RECEIVED'}
                   </span>
                   <button
                     onClick={() => setSubmitted(false)}

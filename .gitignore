@@ -15,6 +15,9 @@
 # production
 /build
 
+# bolt.new / StackBlitz scaffolding (not needed locally)
+.bolt/
+
 # misc
 .DS_Store
 *.pem

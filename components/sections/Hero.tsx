@@ -87,7 +87,7 @@ export default function Hero() {
           >
             <span className="h-px w-8 sm:w-12 bg-sky-500/40" aria-hidden="true" />
             <span className="font-mono text-[10px] sm:text-xs tracking-widest text-sky-400/70 uppercase">
-              // Autonomous Systems &amp; Sensing
+              {'// Autonomous Systems & Sensing'}
             </span>
             <span className="h-px w-8 sm:w-12 bg-sky-500/40" aria-hidden="true" />
           </motion.div>

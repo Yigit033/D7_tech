@@ -62,7 +62,7 @@ export default function UnderwaterGlidersPage() {
           <span className="absolute bottom-3 right-3 w-4 h-4 border-b border-r border-sky-500/20" aria-hidden="true" />
 
           <div className="font-mono text-[10px] tracking-widest text-amber-400/60 uppercase mb-4" aria-hidden="true">
-            // STATUS: IN DEVELOPMENT
+            {'// STATUS: IN DEVELOPMENT'}
           </div>
           <h2 className="text-xl font-semibold text-slate-300 mb-3">
             Research In Progress

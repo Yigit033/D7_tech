@@ -133,7 +133,7 @@ export default function CareersPage() {
           <span className="absolute bottom-3 right-3 w-4 h-4 border-b border-r border-sky-500/20" aria-hidden="true" />
 
           <p className="font-mono text-[10px] tracking-widest text-slate-600 uppercase mb-3" aria-hidden="true">
-            // OPEN APPLICATION
+            {'// OPEN APPLICATION'}
           </p>
           <h3 className="text-lg font-semibold text-slate-300 mb-2">
             Don&apos;t see your role?

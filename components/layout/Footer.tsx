@@ -45,7 +45,7 @@ export default function Footer() {
             </p>
             <div className="mt-4 flex items-center gap-1.5" aria-hidden="true">
               <span className="font-mono text-[10px] text-sky-500/60 tracking-widest">
-                // SYS:ONLINE
+                {'// SYS:ONLINE'}
               </span>
               <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 pulse-dot" />
             </div>
@@ -121,9 +121,6 @@ export default function Footer() {
         <div className="border-t border-[#1a2540] pt-6 flex flex-col sm:flex-row items-center justify-between gap-3">
           <p className="text-xs text-slate-600">
             &copy; {new Date().getFullYear()} D7 Technology. All rights reserved.
-          </p>
-          <p className="text-xs text-slate-600 font-mono">
-            Built with Next.js
           </p>
         </div>
       </div>
