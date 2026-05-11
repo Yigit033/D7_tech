@@ -15,6 +15,9 @@ export interface Project {
   tags: string[];
   description: string;
   category: 'autonomous-systems' | 'sensing' | 'ai-ml';
+  /** Path under public/, e.g. /images/projects/wearable-sensors.jpg */
+  coverImage: string;
+  coverImageAlt: string;
   publications?: Publication[];
   youtubeEmbed?: string;
   startDate?: string;
@@ -29,6 +32,8 @@ export const projects: Project[] = [
     status: 'completed',
     tags: ['UWB', 'IMU', 'Health', 'Sports', 'Localization'],
     category: 'sensing',
+    coverImage: '/images/projects/wearable-sensors.jpg',
+    coverImageAlt: 'Athlete training — motion and performance context for wearable sensing research',
     description:
       'Research into wearable sensor systems combining UWB (Ultra-Wideband) and IMU (Inertial Measurement Unit) technologies for precise human motion tracking, fall detection, and sports performance analysis. This project spans controlled lab environments and real-world field experiments.',
     publications: [
@@ -50,6 +55,8 @@ export const projects: Project[] = [
     status: 'active',
     tags: ['Reinforcement Learning', 'Sensor Fusion', 'EU ITEA', 'ASV', 'Navigation'],
     category: 'autonomous-systems',
+    coverImage: '/images/projects/advisor.jpg',
+    coverImageAlt: 'Surface vessel on open water — maritime autonomous systems',
     description:
       'ADVISOR is an escort-type Autonomous Surface Vehicle (ASV) developed under the EU ITEA program, focusing on autonomous guidance and cooperative navigation in constrained maritime environments including harbors and near-shore areas. The project emphasizes supervised autonomy, sensor fusion, and field validation.',
     startDate: 'January 2026',
@@ -62,6 +69,8 @@ export const projects: Project[] = [
     status: 'completed',
     tags: ['Sensor Fusion', 'Target Tracking', 'Radar', 'Signal Processing'],
     category: 'sensing',
+    coverImage: '/images/projects/multistatic.jpg',
+    coverImageAlt: 'RF and measurement hardware — multi-static radar and signal processing context',
     description:
       'Multi-static radar research using separated transmitters and receivers to observe targets from multiple aspect angles. This approach improves detection robustness for low-RCS targets and reduces sensitivity to clutter, interference, and stealth shaping.',
     youtubeEmbed: 'https://www.youtube.com/embed/bU7NDo-aLyY?start=3',
@@ -84,6 +93,8 @@ export const projects: Project[] = [
     status: 'in-development',
     tags: ['Autonomous Vehicles', 'Underwater', 'Navigation', 'Sensing'],
     category: 'autonomous-systems',
+    coverImage: '/images/projects/underwater-gliders.jpg',
+    coverImageAlt: 'Underwater light rays in blue water — long-endurance subsea platforms',
     description:
       'Development of autonomous underwater glider platforms for long-endurance ocean monitoring, environmental data collection, and subsea sensing. Focuses on energy-efficient propulsion, navigation in dynamic underwater environments, and real-time data transmission.',
   },

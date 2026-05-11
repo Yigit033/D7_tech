@@ -4,6 +4,7 @@ import { ArrowLeft } from 'lucide-react';
 import SectionLabel from '@/components/common/SectionLabel';
 import StatusBadge from '@/components/common/StatusBadge';
 import TechTag from '@/components/common/TechTag';
+import ProjectCover from '@/components/projects/ProjectCover';
 import { getProjectBySlug } from '@/lib/data/projects';
 
 export const metadata: Metadata = {
@@ -51,6 +52,10 @@ export default function UnderwaterGlidersPage() {
             {project.tags.map((tag) => (
               <TechTag key={tag} tag={tag} />
             ))}
+          </div>
+
+          <div className="mt-8">
+            <ProjectCover src={project.coverImage} alt={project.coverImageAlt} priority />
           </div>
         </header>
 

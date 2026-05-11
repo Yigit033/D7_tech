@@ -1,9 +1,11 @@
 import type { Metadata } from 'next';
+import Image from 'next/image';
 import Link from 'next/link';
 import { ArrowLeft } from 'lucide-react';
 import SectionLabel from '@/components/common/SectionLabel';
 import StatusBadge from '@/components/common/StatusBadge';
 import TechTag from '@/components/common/TechTag';
+import ProjectCover from '@/components/projects/ProjectCover';
 import { getProjectBySlug } from '@/lib/data/projects';
 
 export const metadata: Metadata = {
@@ -16,22 +18,6 @@ export const metadata: Metadata = {
     type: 'article',
   },
 };
-
-function ImagePlaceholder({ caption }: { caption: string }) {
-  return (
-    <div
-      className="relative w-full aspect-video rounded-sm bg-[#0a0f1e] border border-[#1a2540] overflow-hidden flex flex-col items-center justify-center gap-3"
-      role="img"
-      aria-label={caption}
-    >
-      <div className="absolute inset-0 grid-bg opacity-60" aria-hidden="true" />
-      <span className="relative z-10 font-mono text-[10px] sm:text-xs text-sky-500/40 tracking-widest uppercase">
-        [ Image Placeholder ]
-      </span>
-      <span className="relative z-10 text-[10px] sm:text-xs text-slate-600 text-center px-4">{caption}</span>
-    </div>
-  );
-}
 
 const sensorSuite = [
   { name: 'IMU', full: 'Inertial Measurement Unit', desc: 'Attitude and motion estimation' },
@@ -80,6 +66,10 @@ export default function AdvisorPage() {
               <TechTag key={tag} tag={tag} />
             ))}
           </div>
+
+          <div className="mt-8">
+            <ProjectCover src={project.coverImage} alt={project.coverImageAlt} priority />
+          </div>
         </header>
 
         <div className="h-px bg-[#1a2540] mb-12" aria-hidden="true" />
@@ -100,7 +90,24 @@ export default function AdvisorPage() {
           <p className="text-slate-400 leading-relaxed mb-6 text-sm sm:text-base">
             Field trials are conducted in representative maritime environments to validate navigation algorithms, sensor fusion performance, and autonomous decision-making under real operational conditions. The ASV undergoes structured test scenarios including convoy operations, obstacle avoidance, and return-to-base maneuvers.
           </p>
-          <ImagePlaceholder caption="ADVISOR field trial — autonomous surface vessel in harbor environment" />
+          <figure className="m-0">
+            <div className="relative w-full aspect-video rounded-sm bg-[#0a0f1e] border border-[#1a2540] overflow-hidden">
+              <Image
+                src="/images/projects/advisor_field_trial.png"
+                alt="Autonomous surface vehicle — Maritime Robotics platform for harbor and escort trials"
+                fill
+                className="object-cover object-center"
+                sizes="(max-width: 896px) 100vw, 896px"
+              />
+              <div
+                className="absolute inset-0 pointer-events-none bg-gradient-to-t from-[#020409]/50 via-transparent to-transparent"
+                aria-hidden="true"
+              />
+            </div>
+            <figcaption className="mt-3 text-xs text-slate-600 text-center sm:text-left">
+              ADVISOR field trial — autonomous surface vessel in harbor environment
+            </figcaption>
+          </figure>
         </section>
 
         {/* Sensor Suite */}
@@ -146,7 +153,24 @@ export default function AdvisorPage() {
           <p className="text-slate-400 leading-relaxed mb-6 text-sm sm:text-base">
             Bathymetric mapping capabilities support harbor surveying and shallow-water navigation, contributing to a richer environmental model that enhances the ASV&apos;s autonomous decision-making.
           </p>
-          <ImagePlaceholder caption="Bathymetry and environmental data collection during field operations" />
+          <figure className="m-0">
+            <div className="relative w-full aspect-video rounded-sm bg-[#0a0f1e] border border-[#1a2540] overflow-hidden">
+              <Image
+                src="/images/projects/bathymetry_mapping.jpg"
+                alt="3D bathymetric map on a display: color-coded seafloor depths with survey overlays during operations"
+                fill
+                className="object-cover object-center"
+                sizes="(max-width: 896px) 100vw, 896px"
+              />
+              <div
+                className="absolute inset-0 pointer-events-none bg-gradient-to-t from-[#020409]/50 via-transparent to-transparent"
+                aria-hidden="true"
+              />
+            </div>
+            <figcaption className="mt-3 text-xs text-slate-600 text-center sm:text-left">
+              Bathymetry and environmental data collection during field operations
+            </figcaption>
+          </figure>
         </section>
       </div>
     </article>

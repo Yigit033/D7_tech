@@ -1,10 +1,12 @@
 import type { Metadata } from 'next';
+import Image from 'next/image';
 import Link from 'next/link';
 import { ArrowLeft } from 'lucide-react';
 import SectionLabel from '@/components/common/SectionLabel';
 import StatusBadge from '@/components/common/StatusBadge';
 import TechTag from '@/components/common/TechTag';
 import PublicationCard from '@/components/projects/PublicationCard';
+import ProjectCover from '@/components/projects/ProjectCover';
 import { getProjectBySlug } from '@/lib/data/projects';
 
 export const metadata: Metadata = {
@@ -17,22 +19,6 @@ export const metadata: Metadata = {
     type: 'article',
   },
 };
-
-function ImagePlaceholder({ caption }: { caption: string }) {
-  return (
-    <div
-      className="relative w-full aspect-video rounded-sm bg-[#0a0f1e] border border-[#1a2540] overflow-hidden flex flex-col items-center justify-center gap-3"
-      role="img"
-      aria-label={caption}
-    >
-      <div className="absolute inset-0 grid-bg opacity-60" aria-hidden="true" />
-      <span className="relative z-10 font-mono text-[10px] sm:text-xs text-sky-500/40 tracking-widest uppercase">
-        [ Image Placeholder ]
-      </span>
-      <span className="relative z-10 text-[10px] sm:text-xs text-slate-600 text-center px-4">{caption}</span>
-    </div>
-  );
-}
 
 export default function MultistaticPage() {
   const project = getProjectBySlug('multistatic')!;
@@ -69,6 +55,10 @@ export default function MultistaticPage() {
               <TechTag key={tag} tag={tag} />
             ))}
           </div>
+
+          <div className="mt-8">
+            <ProjectCover src={project.coverImage} alt={project.coverImageAlt} priority />
+          </div>
         </header>
 
         <div className="h-px bg-[#1a2540] mb-12" aria-hidden="true" />
@@ -89,7 +79,24 @@ export default function MultistaticPage() {
           <p className="text-slate-400 leading-relaxed mb-6 text-sm sm:text-base">
             Simulation environments model the geometric distribution of radar nodes, target trajectories, and measurement uncertainty. Monte Carlo trials across diverse target scenarios are used to validate plot fusion algorithms and assess tracking performance metrics including detection probability, false alarm rate, and positional accuracy.
           </p>
-          <ImagePlaceholder caption="Multi-static radar simulation map — node distribution and target tracking scenario" />
+          <figure className="m-0">
+            <div className="relative w-full aspect-video rounded-sm bg-[#0a0f1e] border border-[#1a2540] overflow-hidden">
+              <Image
+                src="/images/projects/simulation_map.png"
+                alt="Multi-panel simulation maps: atmospheric and polarimetric radar fields over west-east and south-north distance in kilometers"
+                fill
+                className="object-contain object-center bg-[#0a0f1e]"
+                sizes="(max-width: 896px) 100vw, 896px"
+              />
+              <div
+                className="absolute inset-0 pointer-events-none bg-gradient-to-t from-[#020409]/40 via-transparent to-transparent"
+                aria-hidden="true"
+              />
+            </div>
+            <figcaption className="mt-3 text-xs text-slate-600 text-center sm:text-left">
+              Multi-static radar simulation map — node distribution and target tracking scenario
+            </figcaption>
+          </figure>
         </section>
 
         {/* Demo Video */}

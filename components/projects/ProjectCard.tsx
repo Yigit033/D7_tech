@@ -6,6 +6,7 @@ import { motion } from 'framer-motion';
 import { Project } from '@/lib/data/projects';
 import StatusBadge from '@/components/common/StatusBadge';
 import TechTag from '@/components/common/TechTag';
+import ProjectCover from '@/components/projects/ProjectCover';
 
 interface ProjectCardProps {
   project: Project;
@@ -28,19 +29,12 @@ export default function ProjectCard({ project, index = 0 }: ProjectCardProps) {
         <span className="absolute top-3 right-3 w-3 h-3 border-t border-r border-sky-500/20 group-hover:border-sky-500/50 transition-colors" aria-hidden="true" />
         <span className="absolute bottom-3 left-3 w-3 h-3 border-b border-l border-sky-500/20 group-hover:border-sky-500/50 transition-colors" aria-hidden="true" />
 
-        {/* Image placeholder */}
-        <div className="relative w-full aspect-video rounded-sm bg-[#020409] border border-[#1a2540] mb-5 overflow-hidden flex items-center justify-center" aria-hidden="true">
-          <div className="grid-bg absolute inset-0 opacity-60" />
-          <div className="relative z-10 flex flex-col items-center gap-2">
-            <span className="font-mono text-[10px] tracking-widest text-sky-500/30 uppercase">
-              {project.id.toUpperCase()}
-            </span>
-            <span className="w-8 h-px bg-sky-500/20" />
-            <span className="font-mono text-[9px] text-slate-600 uppercase tracking-wider">
-              Visual Placeholder
-            </span>
-          </div>
-          <div className="absolute inset-0 bg-gradient-to-t from-[#020409]/60 to-transparent" />
+        <div className="relative mb-5">
+          <ProjectCover src={project.coverImage} alt={project.coverImageAlt} priority={index < 2} />
+          <div className="absolute inset-0 grid-bg opacity-25 pointer-events-none rounded-sm" aria-hidden="true" />
+          <span className="absolute bottom-2 left-2 z-10 font-mono text-[9px] tracking-widest text-sky-500/50 uppercase pointer-events-none">
+            {project.id.toUpperCase()}
+          </span>
         </div>
 
         {/* Content */}
