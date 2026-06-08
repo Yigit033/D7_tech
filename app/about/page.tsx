@@ -19,10 +19,11 @@ interface TeamMember {
 }
 
 const team: TeamMember[] = [
-  { name: 'A. Gunes', role: 'Founder & Principal Engineer', initials: 'AG' },
-  { name: 'Team Member', role: 'Research Engineer', initials: 'RE' },
-  { name: 'Team Member', role: 'ML Engineer', initials: 'ML' },
-  { name: 'Team Member', role: 'Systems Engineer', initials: 'SE' },
+  { name: 'Ahmet Güneş', role: 'Founder & Principal Engineer', initials: 'AG' },
+  { name: 'Yiğit Tilaver', role: 'Software Engineer', initials: 'YT' },
+  { name: 'Berkant Kırıkkant', role: 'Systems Engineer', initials: 'BK' },
+  { name: 'Bilal Bayram', role: 'Electronics Engineer', initials: 'BB' },
+  { name: 'Fehim Kuş', role: 'Mechatronics Engineer', initials: 'FK' },
 ];
 
 const values = [
@@ -34,7 +35,7 @@ const values = [
   {
     id: '02',
     title: 'Rigor',
-    desc: 'IEEE-level standards in research methodology, from mathematical modeling to empirical validation.',
+    desc: 'Rigorous standards in research methodology — from mathematical modeling to empirical field validation.',
   },
   {
     id: '03',
@@ -118,7 +119,7 @@ export default function AboutPage() {
           <h2 id="team-heading" className="text-2xl sm:text-3xl font-bold text-slate-100 tracking-tight mb-10">
             The People Behind D7
           </h2>
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5">
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4 sm:gap-5">
             {team.map((member, i) => (
               <div
                 key={i}
