@@ -23,7 +23,7 @@ const team: TeamMember[] = [
   { name: 'Ahmet Güneş', role: 'Founder & Principal Engineer', initials: 'AG', linkedin: 'https://www.linkedin.com/' },
   { name: 'Bilal Bayram', role: 'Electronics Engineer', initials: 'BB', linkedin: 'https://www.linkedin.com/' },
   { name: 'Berkant Kırıkkant', role: 'Systems Engineer', initials: 'BK', linkedin: 'https://www.linkedin.com/in/berkant-kirikkanat-7a1934227/' },
-  { name: 'Fehim Kuş', role: 'Mechatronics Engineer', initials: 'FK', linkedin: 'https://www.linkedin.com/' },
+  { name: 'Fehim Kuş', role: 'Mechatronics Engineer', initials: 'FK', linkedin: 'https://www.linkedin.com/in/fehim-ku%C5%9F-a19006131/' },
   { name: 'Yiğit Tilaver', role: 'Software Engineer', initials: 'YT', linkedin: 'https://www.linkedin.com/in/yigittilaver/' },
 ];
 
