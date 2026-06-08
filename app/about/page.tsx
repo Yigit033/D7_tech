@@ -20,10 +20,10 @@ interface TeamMember {
 
 const team: TeamMember[] = [
   { name: 'Ahmet Güneş', role: 'Founder & Principal Engineer', initials: 'AG' },
-  { name: 'Yiğit Tilaver', role: 'Software Engineer', initials: 'YT' },
-  { name: 'Berkant Kırıkkant', role: 'Systems Engineer', initials: 'BK' },
   { name: 'Bilal Bayram', role: 'Electronics Engineer', initials: 'BB' },
+  { name: 'Berkant Kırıkkant', role: 'Systems Engineer', initials: 'BK' },
   { name: 'Fehim Kuş', role: 'Mechatronics Engineer', initials: 'FK' },
+  { name: 'Yiğit Tilaver', role: 'Software Engineer', initials: 'YT' },
 ];
 
 const values = [
