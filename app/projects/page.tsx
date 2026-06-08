@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Projects | D7 Technology',
     description:
-      'IEEE-published and EU-funded research projects in autonomous systems, sensing, and AI.',
+      'Research and engineering projects in autonomous systems, sensing, and AI — from prototype to field deployment.',
     type: 'website',
   },
 };

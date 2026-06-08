@@ -1,54 +1,18 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import { ArrowRight, Terminal } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 import SectionLabel from '@/components/common/SectionLabel';
 
 export const metadata: Metadata = {
   title: 'Careers at D7 Technology',
   description:
-    'Join D7 Technology. We are hiring Research Engineers and ML Engineers to work on autonomous systems, sensor fusion, and perception.',
+    'No open positions at the moment — but we are always interested in exceptional engineers and researchers. Reach out.',
   openGraph: {
     title: 'Careers at D7 Technology',
     description: 'Join our deep-tech R&D team in Istanbul, Turkiye.',
     type: 'website',
   },
 };
-
-interface Job {
-  title: string;
-  tags: string[];
-  description: string;
-  requirements: string[];
-}
-
-const jobs: Job[] = [
-  {
-    title: 'Research Engineer — Autonomous Systems',
-    tags: ['Autonomous Vehicles', 'Navigation', 'ROS', 'C++', 'Python'],
-    description:
-      'Join the autonomous systems team to develop and validate navigation, planning, and control algorithms for our ASV platforms. You will work across simulation and real-world field testing.',
-    requirements: [
-      'Experience with ROS/ROS2 and autonomous robot development',
-      'Strong foundations in probabilistic robotics, state estimation, or control theory',
-      'Python and C++ proficiency',
-      'Familiarity with sensor fusion (GNSS/IMU/LiDAR/Camera)',
-      'Background in maritime or ground autonomy preferred',
-    ],
-  },
-  {
-    title: 'ML Engineer — Sensor Fusion & Perception',
-    tags: ['Machine Learning', 'Sensor Fusion', 'PyTorch', 'Signal Processing', 'Python'],
-    description:
-      'Work on perception and decision-support systems that fuse data from radar, sonar, cameras, and inertial sensors. Apply deep learning and probabilistic methods to build robust real-world detection and tracking pipelines.',
-    requirements: [
-      'Hands-on experience with PyTorch or TensorFlow for applied ML',
-      'Understanding of sensor fusion and Bayesian filtering (Kalman, particle filters)',
-      'Signal processing knowledge — time/frequency domain analysis',
-      'Experience with radar or sonar data is a strong plus',
-      'Ability to work from research papers to production implementation',
-    ],
-  },
-];
 
 export default function CareersPage() {
   return (
@@ -70,64 +34,29 @@ export default function CareersPage() {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pb-20 sm:pb-24">
         <div className="h-px bg-[#1a2540] mb-12 sm:mb-16" aria-hidden="true" />
 
-        {/* Jobs */}
-        <div className="space-y-5 sm:space-y-6 mb-12 sm:mb-16" aria-label="Open positions">
-          {jobs.map((job, i) => (
-            <article
-              key={i}
-              className="group relative rounded-sm border border-[#1a2540] bg-[#0a0f1e] hover:border-sky-500/20 transition-colors duration-300 overflow-hidden"
-            >
-              {/* Terminal header bar */}
-              <div className="flex items-center gap-2 px-5 py-3 border-b border-[#1a2540] bg-[#020409]" aria-hidden="true">
-                <Terminal size={12} className="text-sky-500/50" />
-                <span className="font-mono text-[10px] tracking-widest text-sky-500/50 uppercase">
-                  position://{(i + 1).toString().padStart(2, '0')}
-                </span>
-                <div className="ml-auto flex gap-1.5">
-                  <span className="w-2.5 h-2.5 rounded-full bg-[#1a2540]" />
-                  <span className="w-2.5 h-2.5 rounded-full bg-[#1a2540]" />
-                  <span className="w-2.5 h-2.5 rounded-full bg-sky-500/30" />
-                </div>
-              </div>
+        {/* No open positions notice */}
+        <div className="relative p-8 sm:p-12 rounded-sm border border-[#1a2540] bg-[#0a0f1e] text-center mb-8">
+          <span className="absolute top-3 left-3 w-4 h-4 border-t border-l border-sky-500/20" aria-hidden="true" />
+          <span className="absolute bottom-3 right-3 w-4 h-4 border-b border-r border-sky-500/20" aria-hidden="true" />
 
-              <div className="p-5 sm:p-6">
-                <h2 className="text-lg font-semibold text-slate-100 mb-3">{job.title}</h2>
+          <p className="font-mono text-[10px] tracking-widest text-slate-600 uppercase mb-6" aria-hidden="true">
+            {'// STATUS'}
+          </p>
 
-                <div className="flex flex-wrap gap-1.5 mb-4">
-                  {job.tags.map((tag) => (
-                    <span
-                      key={tag}
-                      className="px-2 py-0.5 rounded-sm bg-sky-500/5 border border-sky-500/15 text-sky-300/60 font-mono text-[10px] tracking-wider"
-                    >
-                      {tag}
-                    </span>
-                  ))}
-                </div>
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-[#1a2540] bg-[#020409] mb-8">
+            <span className="w-1.5 h-1.5 rounded-full bg-slate-600" aria-hidden="true" />
+            <span className="font-mono text-[10px] tracking-widest text-slate-500 uppercase">No open positions</span>
+          </div>
 
-                <p className="text-sm text-slate-400 leading-relaxed mb-5">{job.description}</p>
-
-                <ul className="space-y-1.5 mb-6" role="list">
-                  {job.requirements.map((req, j) => (
-                    <li key={j} className="flex items-start gap-2 text-xs sm:text-[13px] text-slate-500">
-                      <span className="text-sky-500/40 mt-0.5 font-mono flex-shrink-0" aria-hidden="true">›</span>
-                      {req}
-                    </li>
-                  ))}
-                </ul>
-
-                <Link
-                  href="/contact"
-                  className="inline-flex items-center gap-2 px-5 py-2.5 bg-sky-500/10 border border-sky-500/30 text-sky-400 hover:bg-sky-500/20 hover:border-sky-500/60 font-medium text-sm rounded transition-all duration-200 focus-visible:ring-2 focus-visible:ring-sky-400 focus-visible:ring-offset-2 focus-visible:ring-offset-[#0a0f1e]"
-                >
-                  Apply Now
-                  <ArrowRight size={14} aria-hidden="true" />
-                </Link>
-              </div>
-            </article>
-          ))}
+          <h2 className="text-2xl sm:text-3xl font-semibold text-slate-200 mb-4">
+            New roles will be announced here.
+          </h2>
+          <p className="text-sm sm:text-base text-slate-500 max-w-xl mx-auto leading-relaxed">
+            We are not actively hiring right now, but that changes as our projects scale. Check back — or better yet, reach out before we post.
+          </p>
         </div>
 
-        {/* Open CTA */}
+        {/* Open application CTA */}
         <div className="relative p-6 sm:p-8 rounded-sm border border-dashed border-[#1a2540] bg-[#0a0f1e]/50 text-center">
           <span className="absolute top-3 left-3 w-4 h-4 border-t border-l border-sky-500/20" aria-hidden="true" />
           <span className="absolute bottom-3 right-3 w-4 h-4 border-b border-r border-sky-500/20" aria-hidden="true" />
@@ -136,10 +65,10 @@ export default function CareersPage() {
             {'// OPEN APPLICATION'}
           </p>
           <h3 className="text-lg font-semibold text-slate-300 mb-2">
-            Don&apos;t see your role?
+            Exceptional engineers don&apos;t wait.
           </h3>
           <p className="text-sm text-slate-500 mb-6 max-w-md mx-auto">
-            We are always interested in exceptional engineers and researchers. Send us your CV and tell us what you would build.
+            If you work on autonomous systems, perception, or sensor fusion at a high level — we want to hear from you. Send your CV and tell us what you would build.
           </p>
           <Link
             href="/contact"

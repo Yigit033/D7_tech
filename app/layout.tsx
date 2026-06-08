@@ -1,6 +1,6 @@
 import './globals.css';
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
+import { Inter, Space_Grotesk } from 'next/font/google';
 import Navbar from '@/components/layout/Navbar';
 import Footer from '@/components/layout/Footer';
 
@@ -8,6 +8,13 @@ const inter = Inter({
   subsets: ['latin'],
   variable: '--font-sans',
   display: 'swap',
+});
+
+const spaceGrotesk = Space_Grotesk({
+  subsets: ['latin'],
+  variable: '--font-display',
+  display: 'swap',
+  weight: ['500', '600', '700'],
 });
 
 export const metadata: Metadata = {
@@ -27,8 +34,6 @@ export const metadata: Metadata = {
     'wearable sensors',
     'IoT',
     'deep tech',
-    'IEEE',
-    'ITEA',
     'D7 Technology',
   ],
   authors: [{ name: 'D7 Technology', url: 'https://d7tech.net' }],
@@ -71,7 +76,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${inter.variable} dark`}>
+    <html lang="en" className={`${inter.variable} ${spaceGrotesk.variable} dark`}>
       <body className="font-sans antialiased bg-[#020409] text-[#f1f5f9]">
         <a
           href="#main-content"

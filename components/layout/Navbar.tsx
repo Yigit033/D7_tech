@@ -6,11 +6,9 @@ import { usePathname } from 'next/navigation';
 import { Menu, X } from 'lucide-react';
 
 const navLinks = [
-  { label: 'Home', href: '/' },
   { label: 'Projects', href: '/projects' },
   { label: 'About', href: '/about' },
   { label: 'Careers', href: '/careers' },
-  { label: 'Contact', href: '/contact' },
 ];
 
 export default function Navbar() {

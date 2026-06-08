@@ -20,8 +20,8 @@ const tickerItems = [
   'AI / ML',
   'WEARABLE SENSORS',
   'SYSTEM INTEGRATION',
-  'IEEE PUBLICATIONS',
-  'EU ITEA PROGRAM',
+  'PERCEPTION SYSTEMS',
+  'DEEP-TECH R&D',
 ];
 
 const wordVariants = {
@@ -125,7 +125,7 @@ export default function Hero() {
           animate={mounted ? 'visible' : 'hidden'}
           transition={{ delay: 1.2 }}
         >
-          IEEE-published research. EU-funded programs. Real-world engineering.
+          From research to field deployment — autonomous platforms and sensing systems built for the real world.
         </motion.p>
 
         {/* CTAs */}
@@ -151,26 +151,6 @@ export default function Hero() {
           </Link>
         </motion.div>
 
-        {/* Stats hint */}
-        <motion.div
-          className="mt-16 grid grid-cols-2 sm:grid-cols-4 gap-6 sm:gap-8"
-          variants={fadeUp}
-          initial="hidden"
-          animate={mounted ? 'visible' : 'hidden'}
-          transition={{ delay: 1.8 }}
-        >
-          {[
-            { val: '900+', label: 'Subscribers' },
-            { val: '4', label: 'Active Projects' },
-            { val: '3', label: 'IEEE Publications' },
-            { val: 'EU', label: 'ITEA Program' },
-          ].map((s) => (
-            <div key={s.label} className="text-center">
-              <div className="text-xl sm:text-2xl font-bold text-sky-400 font-mono">{s.val}</div>
-              <div className="text-[10px] sm:text-xs text-slate-500 tracking-wide uppercase mt-0.5">{s.label}</div>
-            </div>
-          ))}
-        </motion.div>
       </div>
 
       {/* Ticker */}

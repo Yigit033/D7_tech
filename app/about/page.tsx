@@ -4,7 +4,7 @@ import SectionLabel from '@/components/common/SectionLabel';
 export const metadata: Metadata = {
   title: 'About D7 Technology',
   description:
-    'D7 Technology is a deep-tech company specializing in autonomous vehicles, radar/sonar, AI/ML, sensor fusion, IoT, and wearable sensors. IEEE-published, EU-funded.',
+    'D7 Technology is a deep-tech R&D company specializing in autonomous vehicles, radar/sonar, AI/ML, sensor fusion, and wearable sensors. Based in Istanbul, Turkiye.',
   openGraph: {
     title: 'About D7 Technology',
     description: 'Deep-tech R&D in autonomous systems and advanced sensing.',
@@ -105,7 +105,7 @@ export default function AboutPage() {
                 Our work spans autonomous surface vessels, multi-static radar tracking, wearable sensor systems, and AI-driven perception — all grounded in peer-reviewed research and tested in the field.
               </p>
               <p>
-                As participants in the EU ITEA program and contributors to IEEE conferences, we operate at the frontier of deep technology — and we bring those advances into deployable systems.
+                We operate at the frontier of deep technology — and we build to the standard where research meets deployment.
               </p>
             </div>
           </div>

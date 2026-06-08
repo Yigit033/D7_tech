@@ -37,7 +37,7 @@ export default function ProjectsClient() {
               Projects
             </h1>
             <p className="text-slate-400 max-w-2xl text-base sm:text-lg leading-relaxed">
-              From IEEE-published radar research to EU-funded autonomous ships — our projects span the intersection of advanced sensing, autonomy, and AI.
+              Research and engineering across autonomous systems, sensing, and AI — from early-stage prototype to field deployment.
             </p>
           </motion.div>
         </div>
