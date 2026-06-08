@@ -16,14 +16,15 @@ interface TeamMember {
   name: string;
   role: string;
   initials: string;
+  linkedin: string;
 }
 
 const team: TeamMember[] = [
-  { name: 'Ahmet Güneş', role: 'Founder & Principal Engineer', initials: 'AG' },
-  { name: 'Bilal Bayram', role: 'Electronics Engineer', initials: 'BB' },
-  { name: 'Berkant Kırıkkant', role: 'Systems Engineer', initials: 'BK' },
-  { name: 'Fehim Kuş', role: 'Mechatronics Engineer', initials: 'FK' },
-  { name: 'Yiğit Tilaver', role: 'Software Engineer', initials: 'YT' },
+  { name: 'Ahmet Güneş', role: 'Founder & Principal Engineer', initials: 'AG', linkedin: 'https://www.linkedin.com/' },
+  { name: 'Bilal Bayram', role: 'Electronics Engineer', initials: 'BB', linkedin: 'https://www.linkedin.com/' },
+  { name: 'Berkant Kırıkkant', role: 'Systems Engineer', initials: 'BK', linkedin: 'https://www.linkedin.com/in/berkant-kirikkanat-7a1934227/' },
+  { name: 'Fehim Kuş', role: 'Mechatronics Engineer', initials: 'FK', linkedin: 'https://www.linkedin.com/' },
+  { name: 'Yiğit Tilaver', role: 'Software Engineer', initials: 'YT', linkedin: 'https://www.linkedin.com/in/yigittilaver/' },
 ];
 
 const values = [
@@ -121,17 +122,22 @@ export default function AboutPage() {
           </h2>
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4 sm:gap-5">
             {team.map((member, i) => (
-              <div
+              <a
                 key={i}
-                className="group relative p-5 rounded-sm bg-[#0a0f1e] border border-[#1a2540] hover:border-sky-500/30 transition-all duration-300 text-center"
+                href={member.linkedin}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={`${member.name} — LinkedIn`}
+                className="group relative p-5 rounded-sm bg-[#0a0f1e] border border-[#1a2540] hover:border-sky-500/30 hover:-translate-y-0.5 hover:shadow-[0_0_24px_rgba(14,165,233,0.07)] transition-all duration-300 text-center block"
               >
                 <span className="absolute top-2.5 left-2.5 w-3 h-3 border-t border-l border-sky-500/20 group-hover:border-sky-500/40 transition-colors" aria-hidden="true" />
-                <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-full bg-sky-500/10 border border-sky-500/20 flex items-center justify-center mx-auto mb-4">
+                <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-full bg-sky-500/10 border border-sky-500/20 group-hover:border-sky-500/40 group-hover:bg-sky-500/15 flex items-center justify-center mx-auto mb-4 transition-all duration-300">
                   <span className="font-mono font-bold text-sky-400 text-base sm:text-lg">{member.initials}</span>
                 </div>
-                <p className="text-sm font-semibold text-slate-200">{member.name}</p>
+                <p className="text-sm font-semibold text-slate-200 group-hover:text-sky-300 transition-colors">{member.name}</p>
                 <p className="text-xs text-slate-500 mt-1">{member.role}</p>
-              </div>
+                <p className="text-[10px] font-mono text-sky-500/40 group-hover:text-sky-400/70 mt-2 tracking-widest transition-colors">LinkedIn ↗</p>
+              </a>
             ))}
           </div>
         </section>
