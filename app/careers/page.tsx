@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Link from 'next/link';
 import { ArrowRight } from 'lucide-react';
 import SectionLabel from '@/components/common/SectionLabel';
 
@@ -67,15 +68,15 @@ export default function CareersPage() {
             Exceptional engineers don&apos;t wait.
           </h3>
           <p className="text-sm text-slate-500 mb-6 max-w-md mx-auto">
-            If you work on autonomous systems, perception, or sensor fusion at a high level — we want to hear from you. Send your CV and tell us what you would build.
+            If you work on autonomous systems, perception, or sensor fusion at a high level — we want to hear from you. Drop us a message and include a link to your CV or LinkedIn.
           </p>
-          <a
-            href="mailto:yigitd7tech@gmail.com?subject=Open%20Application%20%E2%80%94%20CV%20Submission&body=Hi%20D7%20Technology%2C%0A%0AI%20would%20like%20to%20apply%20for%20a%20position%20at%20your%20team.%0A%0A%5BPlease%20attach%20your%20CV%20and%20introduce%20yourself%5D"
+          <Link
+            href="/contact"
             className="inline-flex items-center gap-2 px-6 py-2.5 bg-sky-500 hover:bg-sky-400 active:bg-sky-600 text-[#020409] font-semibold text-sm rounded transition-all duration-200 focus-visible:ring-2 focus-visible:ring-sky-400 focus-visible:ring-offset-2 focus-visible:ring-offset-[#0a0f1e]"
           >
-            Send Your CV
+            Get in Touch
             <ArrowRight size={14} aria-hidden="true" />
-          </a>
+          </Link>
         </div>
       </div>
     </div>
