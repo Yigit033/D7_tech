@@ -1,0 +1,345 @@
+{
+  "Common": {
+    "skipToMainContent": "Skip to main content",
+    "allProjects": "All Projects",
+    "getInTouch": "Get in Touch",
+    "viewProjects": "View Projects",
+    "contactUs": "Contact Us",
+    "overview": "Overview",
+    "backToProjects": "All Projects",
+    "viewProject": "View Project"
+  },
+  "StatusBadge": {
+    "active": "ACTIVE",
+    "completed": "COMPLETED",
+    "inDevelopment": "IN DEVELOPMENT"
+  },
+  "Navbar": {
+    "logoAriaLabel": "D7 Technology — Home",
+    "mainNavAriaLabel": "Main navigation",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "projects": "Projects",
+    "about": "About",
+    "careers": "Careers",
+    "getInTouch": "Get in Touch"
+  },
+  "Footer": {
+    "tagline": "Designing intelligent autonomous platforms and advanced sensing technologies for real-world applications.",
+    "status": "// SYS:ONLINE",
+    "company": "Company",
+    "projects": "Projects",
+    "connect": "Connect",
+    "rights": "D7 Technology. All rights reserved.",
+    "links": {
+      "about": "About",
+      "projects": "Projects",
+      "careers": "Careers",
+      "contact": "Contact"
+    },
+    "projectLinks": {
+      "wearableSensors": "Wearable Sensors",
+      "advisorAsv": "ADVISOR ASV",
+      "multiStaticRadar": "Multi-Static Radar",
+      "underwaterGliders": "Underwater Gliders"
+    }
+  },
+  "Hero": {
+    "label": "// Autonomous Systems & Sensing",
+    "headline": "D7 Technology designs intelligent autonomous platforms and advanced sensing technologies for real world applications.",
+    "subtext": "From research to field deployment — autonomous platforms and sensing systems built for the real world.",
+    "viewProjects": "View Projects",
+    "contactUs": "Contact Us",
+    "scroll": "Scroll",
+    "ticker": {
+      "sensorFusion": "SENSOR FUSION",
+      "autonomousVehicles": "AUTONOMOUS VEHICLES",
+      "radarSonar": "RADAR & SONAR",
+      "aiMl": "AI / ML",
+      "wearableSensors": "WEARABLE SENSORS",
+      "systemIntegration": "SYSTEM INTEGRATION",
+      "perceptionSystems": "PERCEPTION SYSTEMS",
+      "deepTechRd": "DEEP-TECH R&D"
+    }
+  },
+  "ExpertiseGrid": {
+    "sectionLabel": "// 01 — CAPABILITIES",
+    "heading": "Areas of Expertise",
+    "description": "From signal processing to autonomous navigation — our capabilities span the full stack of advanced sensing and intelligent systems.",
+    "items": {
+      "sensorSystems": {
+        "title": "Sensor Systems & IoT",
+        "description": "Design and deployment of distributed sensor networks, edge devices, and IoT architectures for real-time data acquisition and monitoring."
+      },
+      "autonomousVehicles": {
+        "title": "Autonomous Vehicles",
+        "description": "Development of autonomous platforms including ground, surface, and maritime vehicles, covering perception, navigation, and decision making."
+      },
+      "radarSonar": {
+        "title": "Radar & Sonar Systems",
+        "description": "Signal processing, detection, and tracking algorithms for radar and sonar-based sensing in complex and cluttered environments."
+      },
+      "sensorFusion": {
+        "title": "Sensor Fusion & Target Tracking",
+        "description": "Multi-sensor data fusion and target tracking solutions using probabilistic filtering and AI-based approaches for robust situational awareness."
+      },
+      "aiMl": {
+        "title": "AI & Machine Learning",
+        "description": "Application of machine learning and AI methods for perception, anomaly detection, prediction, and intelligent decision support."
+      },
+      "systemIntegration": {
+        "title": "System Integration & Prototyping",
+        "description": "End-to-end integration of sensors, algorithms, and platforms — from simulation to real-world prototyping and field testing."
+      }
+    }
+  },
+  "FeaturedProjects": {
+    "sectionLabel": "// 02 — PROJECTS",
+    "heading": "Selected Work",
+    "description": "Research and engineering projects spanning autonomous systems, sensing, and AI.",
+    "allProjects": "All Projects"
+  },
+  "Newsletter": {
+    "sectionLabel": "// FOLLOW OUR WORK",
+    "heading": "Stay in the loop",
+    "description": "We share updates on autonomous systems, sensing research, and field results as our work progresses. LinkedIn is the best place to follow along.",
+    "followLinkedin": "Follow on LinkedIn",
+    "getInTouch": "Get in Touch"
+  },
+  "ProjectData": {
+    "wearable-sensors": {
+      "title": "Wearable Sensors & Performance Analysis",
+      "subtitle": "UWB and IMU-based human motion tracking and performance analysis"
+    },
+    "advisor": {
+      "title": "ADVISOR: Autonomous Surface Ship for Guidance",
+      "subtitle": "EU ITEA Program — Escort-type Autonomous Surface Vehicle"
+    },
+    "multistatic": {
+      "title": "Multi-Static Radar Systems",
+      "subtitle": "Spatially distributed radar for multi-target tracking and spatial diversity"
+    },
+    "underwater-gliders": {
+      "title": "Autonomous Underwater Gliders",
+      "subtitle": "Long-endurance autonomous platforms for underwater exploration and sensing"
+    }
+  },
+  "HomePage": {
+    "metadata": {
+      "title": "D7 Technology — Autonomous Systems & Advanced Sensing",
+      "description": "D7 Technology designs intelligent autonomous platforms and advanced sensing technologies for real-world applications."
+    }
+  },
+  "AboutPage": {
+    "metadata": {
+      "title": "About D7 Technology",
+      "description": "D7 Technology is a deep-tech R&D company specializing in autonomous vehicles, radar/sonar, AI/ML, sensor fusion, and wearable sensors. Based in Istanbul, Turkiye."
+    },
+    "heroLabel": "// ABOUT US",
+    "heroTitle": "About D7 Technology",
+    "heroDescription": "We are a deep-tech research and engineering company building the sensing and autonomy technologies that will define the next generation of intelligent systems.",
+    "missionLabel": "// MISSION",
+    "missionTitle": "Engineering intelligence into the physical world",
+    "missionP1": "D7 Technology exists to close the gap between advanced research and real-world systems. We combine rigorous signal processing, modern machine learning, and engineering discipline to build platforms that operate reliably in demanding environments.",
+    "missionP2": "Our work spans autonomous surface vessels, multi-static radar tracking, wearable sensor systems, and AI-driven perception — all grounded in peer-reviewed research and tested in the field.",
+    "missionP3": "We operate at the frontier of deep technology — and we build to the standard where research meets deployment.",
+    "teamLabel": "// TEAM",
+    "teamTitle": "The People Behind D7",
+    "teamLinkedIn": "LinkedIn ↗",
+    "historyLabel": "// HISTORY",
+    "historyTitle": "Milestones",
+    "valuesLabel": "// VALUES",
+    "valuesTitle": "What We Stand For",
+    "values": {
+      "innovation": { "title": "Innovation", "desc": "Pushing boundaries in sensing and autonomy through rigorous R&D and novel algorithmic approaches." },
+      "rigor": { "title": "Rigor", "desc": "Rigorous standards in research methodology — from mathematical modeling to empirical field validation." },
+      "impact": { "title": "Real-World Impact", "desc": "Every project targets practical deployment — we build things that work outside the lab." },
+      "openScience": { "title": "Open Science", "desc": "Contributing to the global research community through peer-reviewed publications and open collaboration." }
+    },
+    "timeline": {
+      "year2025Label": "2025",
+      "year2025e1": "IEEE publication: Fall Detection Using UWB Data (SIU 2025)",
+      "year2025e2": "IEEE publication: Multi-Static Multi-Target Tracking (RadarConf25, Krakow)",
+      "yearJan2026Label": "Jan 2026",
+      "yearJan2026e1": "ADVISOR EU ITEA project initiated — autonomous surface vessel program",
+      "year2026Label": "2026",
+      "year2026e1": "D7 Technology founded — Istanbul, Turkiye",
+      "year2026e2": "Ongoing R&D across sensing, autonomous systems, and AI/ML"
+    },
+    "team": {
+      "ahmet": { "name": "Ahmet Güneş", "role": "Founder & Principal Engineer" },
+      "bilal": { "name": "Bilal Bayram", "role": "Electronics Engineer" },
+      "berkant": { "name": "Berkant Kırıkkant", "role": "Systems Engineer" },
+      "fehim": { "name": "Fehim Kuş", "role": "Mechatronics Engineer" },
+      "yigit": { "name": "Yiğit Tilaver", "role": "Software Engineer" }
+    }
+  },
+  "CareersPage": {
+    "metadata": {
+      "title": "Careers at D7 Technology",
+      "description": "No open positions at the moment — but we are always interested in exceptional engineers and researchers. Reach out."
+    },
+    "heroLabel": "// JOIN THE TEAM",
+    "heroTitle": "Careers",
+    "heroDescription": "We are building serious engineering — and we need serious engineers. Work on autonomous systems, sensing, and AI problems that matter.",
+    "statusLabel": "// STATUS",
+    "noPositions": "No open positions",
+    "rolesTitle": "New roles will be announced here.",
+    "rolesDescription": "We are not actively hiring right now, but that changes as our projects scale. Check back — or better yet, reach out before we post.",
+    "ctaLabel": "// OPEN APPLICATION",
+    "ctaTitle": "Exceptional engineers don't wait.",
+    "ctaDescription": "If you work on autonomous systems, perception, or sensor fusion at a high level — we want to hear from you. Drop us a message and include a link to your CV or LinkedIn.",
+    "ctaButton": "Get in Touch"
+  },
+  "ContactPage": {
+    "metadata": {
+      "title": "Contact D7 Technology",
+      "description": "Get in touch with D7 Technology for inquiries, collaborations, research partnerships, or career opportunities."
+    },
+    "heroLabel": "// GET IN TOUCH",
+    "heroTitle": "Contact",
+    "heroDescription": "Inquiries, collaborations, research partnerships, or just to say hello.",
+    "reachOut": "Reach Out",
+    "websiteLabel": "Website",
+    "locationLabel": "Location",
+    "locationValue": "Istanbul, Turkiye",
+    "followUs": "Follow Us",
+    "responseTimeLabel": "// Response Time",
+    "responseTimeText": "We typically respond within 1–2 business days. For urgent matters, reach out via LinkedIn.",
+    "nameLabel": "Name",
+    "emailLabel": "Email",
+    "subjectLabel": "Subject",
+    "messageLabel": "Message",
+    "namePlaceholder": "John Doe",
+    "emailPlaceholder": "your@email.com",
+    "messagePlaceholder": "Tell us about your inquiry...",
+    "submitButton": "Send Message",
+    "sending": "Sending...",
+    "subjectPlaceholder": "Select a subject...",
+    "subjectGeneral": "General Inquiry",
+    "subjectCollaboration": "Collaboration",
+    "subjectCareers": "Careers",
+    "subjectPress": "Press",
+    "validationNameMin": "Name must be at least 2 characters",
+    "validationEmailInvalid": "Please enter a valid email",
+    "validationSubjectRequired": "Please select a subject",
+    "validationMessageMin": "Message must be at least 20 characters",
+    "successTitle": "Message Sent",
+    "successDescription": "Thank you for reaching out. We will get back to you shortly.",
+    "successLabel": "// MESSAGE RECEIVED",
+    "sendAnother": "Send another message"
+  },
+  "ProjectsPage": {
+    "metadata": {
+      "title": "Projects",
+      "description": "Explore D7 Technology's research and engineering projects in autonomous systems, sensing, and AI."
+    },
+    "sectionLabel": "// RESEARCH & ENGINEERING",
+    "title": "Projects",
+    "description": "Research and engineering across autonomous systems, sensing, and AI — from early-stage prototype to field deployment.",
+    "filterAll": "All",
+    "filterAutonomous": "Autonomous Systems",
+    "filterSensing": "Sensing",
+    "filterAiMl": "AI / ML",
+    "empty": "// No projects in this category yet."
+  },
+  "AdvisorPage": {
+    "metadata": {
+      "title": "ADVISOR: Autonomous Surface Ship for Guidance",
+      "description": "EU ITEA Program — Escort-type Autonomous Surface Vehicle for cooperative navigation in constrained maritime environments."
+    },
+    "title": "ADVISOR: Autonomous Surface Ship for Guidance",
+    "subtitle": "EU ITEA Program — Escort-type Autonomous Surface Vehicle",
+    "prjId": "PRJ-002",
+    "sectionLabel": "// AUTONOMOUS SYSTEMS · EU ITEA",
+    "present": "Present",
+    "overviewTitle": "Overview",
+    "overviewText": "ADVISOR is an escort-type Autonomous Surface Vehicle (ASV) developed under the EU ITEA program, focusing on autonomous guidance and cooperative navigation in constrained maritime environments including harbors and near-shore areas. The project emphasizes supervised autonomy — where human oversight coexists with automated decision-making — to enable safe, reliable operation in dynamic and cluttered waterways. Field validation is a central component of the program.",
+    "fieldTrialTitle": "Field Trial Setup",
+    "fieldTrialText": "Field trials are conducted in representative maritime environments to validate navigation algorithms, sensor fusion performance, and autonomous decision-making under real operational conditions. The ASV undergoes structured test scenarios including convoy operations, obstacle avoidance, and return-to-base maneuvers.",
+    "fieldTrialCaption": "ADVISOR field trial — autonomous surface vessel in harbor environment",
+    "fieldTrialImageAlt": "Autonomous surface vehicle — Maritime Robotics platform for harbor and escort trials",
+    "navTitle": "Navigation in Dynamic Environments",
+    "navText": "The ADVISOR platform integrates a comprehensive multi-modal sensor suite to achieve robust situational awareness in complex, dynamic maritime environments. Sensor data is fused in real time to support obstacle detection, path planning, and adaptive navigation.",
+    "sensorTableLabel": "Sensor suite specifications",
+    "sensorColSensor": "Sensor",
+    "sensorColSystem": "System",
+    "sensorColFunction": "Function",
+    "imuFull": "Inertial Measurement Unit",
+    "imuDesc": "Attitude and motion estimation",
+    "gnssFull": "Global Navigation Satellite System",
+    "gnssDesc": "Global positioning and velocity",
+    "cameraFull": "Visual Perception System",
+    "cameraDesc": "Object detection and scene understanding",
+    "lidarFull": "3D Laser Mapping",
+    "lidarDesc": "High-resolution 3D environmental mapping",
+    "radarFull": "Millimeter-wave Radar",
+    "radarDesc": "All-weather obstacle detection",
+    "metFull": "Meteorological Sensors",
+    "metDesc": "Wind speed, direction, temperature, pressure",
+    "bathyTitle": "Bathymetry Mapping & Environmental Data Collection",
+    "bathyText1": "In addition to navigation, ADVISOR collects environmental and oceanographic data during operations. Onboard meteorological sensors continuously monitor wind speed, wind direction, air temperature, and atmospheric pressure — providing contextual data that informs route planning and maneuverability analysis.",
+    "bathyText2": "Bathymetric mapping capabilities support harbor surveying and shallow-water navigation, contributing to a richer environmental model that enhances the ASV's autonomous decision-making.",
+    "bathyCaption": "Bathymetry and environmental data collection during field operations",
+    "bathyImageAlt": "3D bathymetric map on a display: color-coded seafloor depths with survey overlays during operations"
+  },
+  "MultistaticPage": {
+    "metadata": {
+      "title": "Multi-Static Radar Systems",
+      "description": "Spatially distributed radar for multi-target tracking and spatial diversity — IEEE RadarConf25 research by D7 Technology."
+    },
+    "title": "Multi-Static Radar Systems",
+    "subtitle": "Spatially distributed radar for multi-target tracking and spatial diversity",
+    "prjId": "PRJ-003",
+    "sectionLabel": "// SENSING · TARGET TRACKING",
+    "overviewTitle": "Overview",
+    "overviewText": "Multi-static radar uses separated transmitters and receivers to observe targets from multiple aspect angles, improving detection robustness for low-RCS (Radar Cross Section) targets and reducing sensitivity to clutter, interference, and stealth shaping. By exploiting spatial diversity, multi-static configurations overcome fundamental limitations of monostatic radar and provide richer measurement geometry for target tracking and classification.",
+    "simulationTitle": "Simulation Map",
+    "simulationText": "Simulation environments model the geometric distribution of radar nodes, target trajectories, and measurement uncertainty. Monte Carlo trials across diverse target scenarios are used to validate plot fusion algorithms and assess tracking performance metrics including detection probability, false alarm rate, and positional accuracy.",
+    "simulationCaption": "Multi-static radar simulation map — node distribution and target tracking scenario",
+    "simulationImageAlt": "Multi-panel simulation maps: atmospheric and polarimetric radar fields over west-east and south-north distance in kilometers",
+    "demoTitle": "Multi-Static Systems Demo",
+    "demoText": "The following demonstration illustrates the multi-static radar system processing pipeline, including plot-level data fusion, track initiation, and multi-target tracking performance in a simulated scenario.",
+    "demoIframeTitle": "Multi-Static Radar Demo",
+    "publicationsLabel": "// IEEE PUBLICATIONS"
+  },
+  "WearableSensorsPage": {
+    "metadata": {
+      "title": "Wearable Sensors & Performance Analysis",
+      "description": "UWB and IMU-based human motion tracking and performance analysis research by D7 Technology. IEEE SIU 2025 publication."
+    },
+    "title": "Wearable Sensors & Performance Analysis",
+    "subtitle": "UWB and IMU-based human motion tracking and performance analysis",
+    "prjId": "PRJ-001",
+    "sectionLabel": "// SENSING · HEALTH & SPORTS",
+    "overviewTitle": "Overview",
+    "overviewText": "Research into wearable sensor systems combining UWB (Ultra-Wideband) and IMU (Inertial Measurement Unit) technologies for precise human motion tracking, fall detection, and sports performance analysis. This project spans controlled lab environments and real-world field experiments.",
+    "localizationTitle": "Controlled Localization Test Setup",
+    "localizationText": "A structured indoor test environment was established to validate UWB-based localization accuracy under controlled conditions. Multiple anchor nodes were positioned in a calibrated grid, enabling sub-decimeter positional accuracy measurements. IMU data was synchronized to provide complementary inertial measurements for motion state classification.",
+    "localizationImageAlt": "Workstation display showing a precision localization and tracking interface used in controlled indoor tests",
+    "localizationCaption": "Controlled localization test environment with UWB anchor placement",
+    "motionTitle": "Data Driven Motion Evaluation",
+    "motionText": "Collected sensor data was processed through machine learning pipelines to classify motion states, detect anomalies such as falls, and evaluate athletic performance metrics. The fusion of UWB positional data and IMU acceleration/gyroscope readings enables robust discrimination between normal activity and fall events with high sensitivity and specificity.",
+    "motionImageAlt": "Abstract visualization representing large-scale motion and sensor-derived data for analysis pipelines",
+    "motionCaption": "Motion evaluation pipeline — sensor fusion and ML classification results",
+    "fieldTitle": "Field Experiments",
+    "fieldText": "Real-world trials were conducted in sports and healthcare settings to validate system performance outside controlled laboratory conditions. Field experiments tested the system's robustness to multipath propagation, body occlusion, and varying environmental conditions, demonstrating reliable fall detection and performance analysis in practical deployments.",
+    "fieldImageAlt": "Athlete on an indoor court wearing ankle-mounted sensors during a motion capture style field experiment",
+    "fieldCaption": "Field experiment setup — real-world wearable sensor deployment",
+    "publicationsLabel": "// IEEE PUBLICATIONS"
+  },
+  "UnderwaterGlidersPage": {
+    "metadata": {
+      "title": "Autonomous Underwater Gliders",
+      "description": "Long-endurance autonomous platforms for underwater exploration and sensing — upcoming research by D7 Technology."
+    },
+    "title": "Autonomous Underwater Gliders",
+    "subtitle": "Long-endurance autonomous platforms for underwater exploration and sensing",
+    "description": "Development of autonomous underwater glider platforms for long-endurance ocean monitoring, environmental data collection, and subsea sensing. Focuses on energy-efficient propulsion, navigation in dynamic underwater environments, and real-time data transmission.",
+    "prjId": "PRJ-004",
+    "sectionLabel": "// AUTONOMOUS SYSTEMS · UNDERWATER",
+    "statusLabel": "// STATUS: IN DEVELOPMENT",
+    "researchTitle": "Research In Progress",
+    "updatesComingSoon": "Updates coming soon"
+  }
+}

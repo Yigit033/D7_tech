@@ -2,27 +2,15 @@
 
 import { useEffect, useState, Suspense } from 'react';
 import dynamic from 'next/dynamic';
-import Link from 'next/link';
+import { useTranslations } from 'next-intl';
+import { Link } from '@/i18n/navigation';
 import { ArrowRight, ChevronDown } from 'lucide-react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion } from 'framer-motion';
 
 const RadarScene = dynamic(() => import('@/components/three/RadarScene'), {
   ssr: false,
   loading: () => <div className="w-full h-full bg-transparent" aria-hidden="true" />,
 });
-
-const headline = 'D7 Technology designs intelligent autonomous platforms and advanced sensing technologies for real world applications.';
-
-const tickerItems = [
-  'SENSOR FUSION',
-  'AUTONOMOUS VEHICLES',
-  'RADAR & SONAR',
-  'AI / ML',
-  'WEARABLE SENSORS',
-  'SYSTEM INTEGRATION',
-  'PERCEPTION SYSTEMS',
-  'DEEP-TECH R&D',
-];
 
 const wordVariants = {
   hidden: { opacity: 0, y: 20 },
@@ -47,13 +35,26 @@ const fadeUp = {
 };
 
 export default function Hero() {
+  const t = useTranslations('Hero');
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
     setMounted(true);
   }, []);
 
+  const headline = t('headline');
   const words = headline.split(' ');
+
+  const tickerItems = [
+    t('ticker.sensorFusion'),
+    t('ticker.autonomousVehicles'),
+    t('ticker.radarSonar'),
+    t('ticker.aiMl'),
+    t('ticker.wearableSensors'),
+    t('ticker.systemIntegration'),
+    t('ticker.perceptionSystems'),
+    t('ticker.deepTechRd'),
+  ];
 
   return (
     <section
@@ -87,7 +88,7 @@ export default function Hero() {
           >
             <span className="h-px w-8 sm:w-12 bg-sky-500/40" aria-hidden="true" />
             <span className="font-mono text-[10px] sm:text-xs tracking-widest text-sky-400/70 uppercase">
-              {'// Autonomous Systems & Sensing'}
+              {t('label')}
             </span>
             <span className="h-px w-8 sm:w-12 bg-sky-500/40" aria-hidden="true" />
           </motion.div>
@@ -125,7 +126,7 @@ export default function Hero() {
           animate={mounted ? 'visible' : 'hidden'}
           transition={{ delay: 1.2 }}
         >
-          From research to field deployment — autonomous platforms and sensing systems built for the real world.
+          {t('subtext')}
         </motion.p>
 
         {/* CTAs */}
@@ -140,17 +141,16 @@ export default function Hero() {
             href="/projects"
             className="inline-flex items-center justify-center gap-2 px-7 py-3.5 bg-sky-500 hover:bg-sky-400 active:bg-sky-600 text-[#020409] font-semibold text-sm rounded transition-all duration-200 glow-cyan-sm hover:glow-cyan focus-visible:ring-2 focus-visible:ring-sky-400 focus-visible:ring-offset-2 focus-visible:ring-offset-[#020409]"
           >
-            View Projects
+            {t('viewProjects')}
             <ArrowRight size={16} aria-hidden="true" />
           </Link>
           <Link
             href="/contact"
             className="inline-flex items-center justify-center gap-2 px-7 py-3.5 border border-sky-500/40 hover:border-sky-500/80 active:border-sky-500 text-sky-300 hover:text-sky-100 font-medium text-sm rounded transition-all duration-200 hover:bg-sky-500/5 focus-visible:ring-2 focus-visible:ring-sky-400 focus-visible:ring-offset-2 focus-visible:ring-offset-[#020409]"
           >
-            Contact Us
+            {t('contactUs')}
           </Link>
         </motion.div>
-
       </div>
 
       {/* Ticker */}
@@ -172,7 +172,7 @@ export default function Hero() {
 
       {/* Scroll indicator */}
       <div className="absolute bottom-20 left-1/2 -translate-x-1/2 flex flex-col items-center gap-1 z-10" aria-hidden="true">
-        <span className="font-mono text-[9px] tracking-widest text-slate-600 uppercase">Scroll</span>
+        <span className="font-mono text-[9px] tracking-widest text-slate-600 uppercase">{t('scroll')}</span>
         <ChevronDown size={14} className="text-slate-600 animate-bounce" />
       </div>
     </section>

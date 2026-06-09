@@ -1,0 +1,102 @@
+import '../globals.css';
+import type { Metadata } from 'next';
+import { Inter, Space_Grotesk } from 'next/font/google';
+import { NextIntlClientProvider } from 'next-intl';
+import { getMessages, setRequestLocale } from 'next-intl/server';
+import { notFound } from 'next/navigation';
+import Navbar from '@/components/layout/Navbar';
+import Footer from '@/components/layout/Footer';
+import { routing } from '@/i18n/routing';
+
+const inter = Inter({
+  subsets: ['latin'],
+  variable: '--font-sans',
+  display: 'swap',
+});
+
+const spaceGrotesk = Space_Grotesk({
+  subsets: ['latin'],
+  variable: '--font-display',
+  display: 'swap',
+  weight: ['500', '600', '700'],
+});
+
+export const metadata: Metadata = {
+  metadataBase: new URL('https://d7tech.net'),
+  title: {
+    default: 'D7 Technology — Autonomous Systems & Advanced Sensing',
+    template: '%s | D7 Technology',
+  },
+  description:
+    'D7 Technology designs intelligent autonomous platforms and advanced sensing technologies for real-world applications.',
+  keywords: [
+    'autonomous vehicles',
+    'sensor fusion',
+    'radar systems',
+    'sonar',
+    'AI machine learning',
+    'wearable sensors',
+    'deep tech',
+    'D7 Technology',
+  ],
+  authors: [{ name: 'D7 Technology', url: 'https://d7tech.net' }],
+  creator: 'D7 Technology',
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
+};
+
+export function generateStaticParams() {
+  return routing.locales.map((locale) => ({ locale }));
+}
+
+export default async function LocaleLayout({
+  children,
+  params,
+}: {
+  children: React.ReactNode;
+  params: { locale: string };
+}) {
+  const { locale } = params;
+
+  if (!(routing.locales as readonly string[]).includes(locale)) {
+    notFound();
+  }
+
+  setRequestLocale(locale);
+
+  const messages = await getMessages();
+
+  const baseUrl = 'https://d7tech.net';
+
+  return (
+    <html lang={locale} className={`${inter.variable} ${spaceGrotesk.variable} dark`}>
+      <head>
+        <link rel="alternate" hrefLang="tr" href={`${baseUrl}/tr`} />
+        <link rel="alternate" hrefLang="en" href={`${baseUrl}/en`} />
+        <link rel="alternate" hrefLang="x-default" href={`${baseUrl}/tr`} />
+      </head>
+      <body className="font-sans antialiased bg-[#020409] text-[#f1f5f9]">
+        <NextIntlClientProvider messages={messages}>
+          <a
+            href="#main-content"
+            className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[100] focus:px-4 focus:py-2 focus:bg-sky-500 focus:text-[#020409] focus:rounded focus:text-sm focus:font-semibold"
+          >
+            {locale === 'tr' ? 'Ana içeriğe geç' : 'Skip to main content'}
+          </a>
+          <Navbar />
+          <main id="main-content">{children}</main>
+          <Footer />
+        </NextIntlClientProvider>
+      </body>
+    </html>
+  );
+}

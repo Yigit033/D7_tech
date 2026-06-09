@@ -1,25 +1,27 @@
 'use client';
 
 import { useState, useEffect, useCallback, useRef } from 'react';
-import Link from 'next/link';
-import { usePathname } from 'next/navigation';
+import { useLocale, useTranslations } from 'next-intl';
+import { Link, usePathname } from '@/i18n/navigation';
 import { Menu, X } from 'lucide-react';
 
-const navLinks = [
-  { label: 'Projects', href: '/projects' },
-  { label: 'About', href: '/about' },
-  { label: 'Careers', href: '/careers' },
-];
-
 export default function Navbar() {
+  const t = useTranslations('Navbar');
+  const locale = useLocale();
+  const pathname = usePathname();
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
   const [hidden, setHidden] = useState(false);
   const lastYRef = useRef(0);
-  const pathname = usePathname();
   const mobileMenuRef = useRef<HTMLDivElement>(null);
 
   const closeMobile = useCallback(() => setMobileOpen(false), []);
+
+  const navLinks = [
+    { label: t('projects'), href: '/projects' },
+    { label: t('about'), href: '/about' },
+    { label: t('careers'), href: '/careers' },
+  ];
 
   useEffect(() => {
     closeMobile();
@@ -74,7 +76,7 @@ export default function Navbar() {
           : 'bg-transparent'
       }`}
       role="navigation"
-      aria-label="Main navigation"
+      aria-label={t('mainNavAriaLabel')}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
@@ -82,7 +84,7 @@ export default function Navbar() {
           <Link
             href="/"
             className="flex items-center gap-2.5 group relative z-10"
-            aria-label="D7 Technology — Home"
+            aria-label={t('logoAriaLabel')}
           >
             <div className="flex items-center justify-center w-9 h-9 rounded border border-sky-500/40 bg-sky-500/10 group-hover:border-sky-500/70 group-hover:bg-sky-500/15 transition-all duration-200">
               <span className="font-mono font-bold text-sky-400 text-base leading-none select-none">
@@ -115,10 +117,35 @@ export default function Navbar() {
             ))}
             <Link
               href="/contact"
-              className="ml-4 px-4 py-2 text-sm font-medium bg-sky-500/10 border border-sky-500/30 text-sky-400 rounded hover:bg-sky-500/20 hover:border-sky-500/60 transition-all duration-200"
+              className="ml-2 px-4 py-2 text-sm font-medium bg-sky-500/10 border border-sky-500/30 text-sky-400 rounded hover:bg-sky-500/20 hover:border-sky-500/60 transition-all duration-200"
             >
-              Get in Touch
+              {t('getInTouch')}
             </Link>
+
+            {/* Language switcher */}
+            <div className="ml-3 flex items-center gap-0.5 font-mono text-[11px] tracking-wider border-l border-[#1a2540] pl-3">
+              <Link
+                href={pathname}
+                locale="tr"
+                className={`px-2 py-1 rounded transition-colors duration-200 ${
+                  locale === 'tr' ? 'text-sky-400' : 'text-slate-500 hover:text-slate-300'
+                }`}
+                aria-label="Türkçe"
+              >
+                TR
+              </Link>
+              <span className="text-slate-700 select-none">|</span>
+              <Link
+                href={pathname}
+                locale="en"
+                className={`px-2 py-1 rounded transition-colors duration-200 ${
+                  locale === 'en' ? 'text-sky-400' : 'text-slate-500 hover:text-slate-300'
+                }`}
+                aria-label="English"
+              >
+                EN
+              </Link>
+            </div>
           </div>
 
           {/* Mobile toggle */}
@@ -127,7 +154,7 @@ export default function Navbar() {
             onClick={() => setMobileOpen(!mobileOpen)}
             aria-expanded={mobileOpen}
             aria-controls="mobile-menu"
-            aria-label={mobileOpen ? 'Close menu' : 'Open menu'}
+            aria-label={mobileOpen ? t('closeMenu') : t('openMenu')}
           >
             {mobileOpen ? <X size={20} /> : <Menu size={20} />}
           </button>
@@ -169,8 +196,33 @@ export default function Navbar() {
             className="block mt-3 px-3 py-2.5 text-center text-sm font-medium bg-sky-500/10 border border-sky-500/30 text-sky-400 rounded hover:bg-sky-500/20 transition-all duration-200"
             onClick={closeMobile}
           >
-            Get in Touch
+            {t('getInTouch')}
           </Link>
+
+          {/* Mobile language switcher */}
+          <div className="mt-3 pt-3 border-t border-[#1a2540] flex items-center gap-1 font-mono text-xs">
+            <Link
+              href={pathname}
+              locale="tr"
+              onClick={closeMobile}
+              className={`px-3 py-1.5 rounded transition-colors duration-200 ${
+                locale === 'tr' ? 'text-sky-400 bg-sky-500/10' : 'text-slate-500 hover:text-slate-300'
+              }`}
+            >
+              TR
+            </Link>
+            <span className="text-slate-700 select-none">|</span>
+            <Link
+              href={pathname}
+              locale="en"
+              onClick={closeMobile}
+              className={`px-3 py-1.5 rounded transition-colors duration-200 ${
+                locale === 'en' ? 'text-sky-400 bg-sky-500/10' : 'text-slate-500 hover:text-slate-300'
+              }`}
+            >
+              EN
+            </Link>
+          </div>
         </div>
       </div>
     </nav>

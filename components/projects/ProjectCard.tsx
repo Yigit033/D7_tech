@@ -1,6 +1,7 @@
 'use client';
 
-import Link from 'next/link';
+import { useTranslations } from 'next-intl';
+import { Link } from '@/i18n/navigation';
 import { ArrowRight } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { Project } from '@/lib/data/projects';
@@ -14,6 +15,11 @@ interface ProjectCardProps {
 }
 
 export default function ProjectCard({ project, index = 0 }: ProjectCardProps) {
+  const t = useTranslations('ProjectData');
+  const tCommon = useTranslations('Common');
+  const title = t(`${project.slug}.title` as any);
+  const subtitle = t(`${project.slug}.subtitle` as any);
+
   return (
     <motion.article
       initial={{ opacity: 0, y: 24 }}
@@ -53,15 +59,15 @@ export default function ProjectCard({ project, index = 0 }: ProjectCardProps) {
           </div>
 
           <h3 className="text-base font-semibold text-slate-100 group-hover:text-sky-300 transition-colors leading-snug mb-1.5">
-            {project.title}
+            {title}
           </h3>
 
           <p className="text-xs text-slate-500 leading-relaxed flex-1 line-clamp-2">
-            {project.subtitle}
+            {subtitle}
           </p>
 
           <div className="mt-4 flex items-center gap-1.5 text-xs font-medium text-sky-400/60 group-hover:text-sky-400 transition-colors duration-200">
-            View Project
+            {tCommon('viewProject')}
             <ArrowRight
               size={12}
               className="group-hover:translate-x-1 transition-transform duration-200"

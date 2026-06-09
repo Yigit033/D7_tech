@@ -1,0 +1,345 @@
+{
+  "Common": {
+    "skipToMainContent": "Ana içeriğe geç",
+    "allProjects": "Tüm Projeler",
+    "getInTouch": "İletişime Geç",
+    "viewProjects": "Projeleri Gör",
+    "contactUs": "Bize Ulaşın",
+    "overview": "Genel Bakış",
+    "backToProjects": "Tüm Projeler",
+    "viewProject": "Projeyi Görüntüle"
+  },
+  "StatusBadge": {
+    "active": "AKTİF",
+    "completed": "TAMAMLANDI",
+    "inDevelopment": "GELİŞTİRİLİYOR"
+  },
+  "Navbar": {
+    "logoAriaLabel": "D7 Technology — Ana Sayfa",
+    "mainNavAriaLabel": "Ana gezinti",
+    "openMenu": "Menüyü aç",
+    "closeMenu": "Menüyü kapat",
+    "projects": "Projeler",
+    "about": "Hakkımızda",
+    "careers": "Kariyer",
+    "getInTouch": "İletişime Geç"
+  },
+  "Footer": {
+    "tagline": "Gerçek dünya uygulamaları için akıllı otonom platformlar ve gelişmiş algılama teknolojileri tasarlıyoruz.",
+    "status": "// SYS:ONLINE",
+    "company": "Şirket",
+    "projects": "Projeler",
+    "connect": "Bağlantı",
+    "rights": "D7 Technology. Tüm hakları saklıdır.",
+    "links": {
+      "about": "Hakkımızda",
+      "projects": "Projeler",
+      "careers": "Kariyer",
+      "contact": "İletişim"
+    },
+    "projectLinks": {
+      "wearableSensors": "Giyilebilir Sensörler",
+      "advisorAsv": "ADVISOR ASV",
+      "multiStaticRadar": "Çok-Statik Radar",
+      "underwaterGliders": "Su Altı Planörleri"
+    }
+  },
+  "Hero": {
+    "label": "// Otonom Sistemler & Algılama",
+    "headline": "D7 Technology, gerçek dünya uygulamaları için akıllı otonom platformlar ve gelişmiş algılama teknolojileri tasarlar.",
+    "subtext": "Araştırmadan saha konuşlandırmasına — gerçek dünya için inşa edilmiş otonom platformlar ve algılama sistemleri.",
+    "viewProjects": "Projeleri Gör",
+    "contactUs": "Bize Ulaşın",
+    "scroll": "Kaydır",
+    "ticker": {
+      "sensorFusion": "SENSÖR FÜZYONU",
+      "autonomousVehicles": "OTONOM ARAÇLAR",
+      "radarSonar": "RADAR & SONAR",
+      "aiMl": "YZ / ML",
+      "wearableSensors": "GİYİLEBİLİR SENSÖRLER",
+      "systemIntegration": "SİSTEM ENTEGRASYONU",
+      "perceptionSystems": "ALGILAMA SİSTEMLERİ",
+      "deepTechRd": "DERİN TEKNOLOJİ Ar-Ge"
+    }
+  },
+  "ExpertiseGrid": {
+    "sectionLabel": "// 01 — YETKİNLİKLER",
+    "heading": "Uzmanlık Alanları",
+    "description": "Sinyal işlemeden otonom navigasyona — yetkinliklerimiz, gelişmiş algılama ve akıllı sistemlerin tüm yığınını kapsar.",
+    "items": {
+      "sensorSystems": {
+        "title": "Sensör Sistemleri & IoT",
+        "description": "Gerçek zamanlı veri toplama ve izleme için dağıtık sensör ağları, uç cihazlar ve IoT mimarilerinin tasarımı ve konuşlandırılması."
+      },
+      "autonomousVehicles": {
+        "title": "Otonom Araçlar",
+        "description": "Algılama, navigasyon ve karar vermeyi kapsayan kara, yüzey ve deniz araçları dahil otonom platformların geliştirilmesi."
+      },
+      "radarSonar": {
+        "title": "Radar & Sonar Sistemleri",
+        "description": "Karmaşık ve kalabalık ortamlarda radar ve sonar tabanlı algılama için sinyal işleme, tespit ve takip algoritmaları."
+      },
+      "sensorFusion": {
+        "title": "Sensör Füzyonu & Hedef Takibi",
+        "description": "Güçlü durumsal farkındalık için olasılıksal filtreleme ve YZ tabanlı yaklaşımlar kullanan çok sensörlü veri füzyonu ve hedef takip çözümleri."
+      },
+      "aiMl": {
+        "title": "YZ & Makine Öğrenmesi",
+        "description": "Algılama, anomali tespiti, tahmin ve akıllı karar desteği için makine öğrenmesi ve YZ yöntemlerinin uygulanması."
+      },
+      "systemIntegration": {
+        "title": "Sistem Entegrasyonu & Prototipleme",
+        "description": "Sensörler, algoritmalar ve platformların uçtan uca entegrasyonu — simülasyondan gerçek dünya prototipleme ve saha testine."
+      }
+    }
+  },
+  "FeaturedProjects": {
+    "sectionLabel": "// 02 — PROJELER",
+    "heading": "Seçili Çalışmalar",
+    "description": "Otonom sistemler, algılama ve yapay zekayı kapsayan araştırma ve mühendislik projeleri.",
+    "allProjects": "Tüm Projeler"
+  },
+  "Newsletter": {
+    "sectionLabel": "// ÇALIŞMALARIMIZI TAKİP EDİN",
+    "heading": "Gelişmelerden Haberdar Olun",
+    "description": "Çalışmalarımız ilerledikçe otonom sistemler, algılama araştırmaları ve saha sonuçları hakkında güncellemeler paylaşıyoruz. Takip etmek için en iyi yer LinkedIn.",
+    "followLinkedin": "LinkedIn'de Takip Et",
+    "getInTouch": "İletişime Geç"
+  },
+  "ProjectData": {
+    "wearable-sensors": {
+      "title": "Giyilebilir Sensörler & Performans Analizi",
+      "subtitle": "UWB ve IMU tabanlı insan hareketi takibi ve performans analizi"
+    },
+    "advisor": {
+      "title": "ADVISOR: Rehberlik için Otonom Yüzey Gemisi",
+      "subtitle": "AB ITEA Programı — Eskort Tipi Otonom Yüzey Aracı"
+    },
+    "multistatic": {
+      "title": "Çok-Statik Radar Sistemleri",
+      "subtitle": "Çok hedef takibi ve uzamsal çeşitlilik için uzamsal dağılımlı radar"
+    },
+    "underwater-gliders": {
+      "title": "Otonom Su Altı Planörleri",
+      "subtitle": "Su altı keşfi ve algılama için uzun dayanıklı otonom platformlar"
+    }
+  },
+  "HomePage": {
+    "metadata": {
+      "title": "D7 Technology — Otonom Sistemler & Gelişmiş Algılama",
+      "description": "D7 Technology, gerçek dünya uygulamaları için akıllı otonom platformlar ve gelişmiş algılama teknolojileri tasarlar."
+    }
+  },
+  "AboutPage": {
+    "metadata": {
+      "title": "D7 Technology Hakkında",
+      "description": "D7 Technology, otonom araçlar, radar/sonar, YZ/ML, sensör füzyonu ve giyilebilir sensörler alanında uzmanlaşmış derin teknoloji Ar-Ge şirketidir. İstanbul, Türkiye merkezli."
+    },
+    "heroLabel": "// HAKKIMIZDA",
+    "heroTitle": "D7 Technology Hakkında",
+    "heroDescription": "Yeni nesil akıllı sistemleri tanımlayacak algılama ve özerklik teknolojileri geliştiren derin teknoloji araştırma ve mühendislik şirketiyiz.",
+    "missionLabel": "// MİSYON",
+    "missionTitle": "Fiziksel dünyaya zeka kazandırmak",
+    "missionP1": "D7 Technology, ileri araştırma ile gerçek dünya sistemleri arasındaki boşluğu kapatmak için var. Zorlayıcı ortamlarda güvenilir biçimde çalışan platformlar inşa etmek için titiz sinyal işleme, modern makine öğrenmesi ve mühendislik disiplinini bir araya getiriyoruz.",
+    "missionP2": "Çalışmalarımız otonom yüzey gemilerini, çok-statik radar takibini, giyilebilir sensör sistemlerini ve YZ tabanlı algılamayı kapsıyor; tümü hakemli araştırmalara dayalı ve sahada test edilmiş.",
+    "missionP3": "Derin teknolojinin sınırında faaliyet gösteriyor ve araştırmanın konuşlandırmayla buluştuğu standartta inşa ediyoruz.",
+    "teamLabel": "// EKİP",
+    "teamTitle": "D7'nin Arkasındaki İnsanlar",
+    "teamLinkedIn": "LinkedIn ↗",
+    "historyLabel": "// TARİHÇE",
+    "historyTitle": "Kilometre Taşları",
+    "valuesLabel": "// DEĞERLERİMİZ",
+    "valuesTitle": "Değer Verdiğimiz Şeyler",
+    "values": {
+      "innovation": { "title": "İnovasyon", "desc": "Titiz Ar-Ge ve yeni algoritmik yaklaşımlar aracılığıyla algılama ve özerkliğin sınırlarını zorlamak." },
+      "rigor": { "title": "Titizlik", "desc": "Araştırma metodolojisinde titiz standartlar — matematiksel modellemeden deneysel saha doğrulamasına." },
+      "impact": { "title": "Gerçek Dünya Etkisi", "desc": "Her proje pratik konuşlandırmayı hedefler — laboratuvar dışında da çalışan şeyler inşa ediyoruz." },
+      "openScience": { "title": "Açık Bilim", "desc": "Hakemli yayınlar ve açık iş birliği aracılığıyla küresel araştırma topluluğuna katkıda bulunmak." }
+    },
+    "timeline": {
+      "year2025Label": "2025",
+      "year2025e1": "IEEE yayını: UWB Verisiyle Düşme Tespiti (SIU 2025)",
+      "year2025e2": "IEEE yayını: Çok-Statik Çok-Hedef Takibi (RadarConf25, Krakow)",
+      "yearJan2026Label": "Oca 2026",
+      "yearJan2026e1": "ADVISOR AB ITEA projesi başlatıldı — otonom yüzey gemisi programı",
+      "year2026Label": "2026",
+      "year2026e1": "D7 Technology kuruldu — İstanbul, Türkiye",
+      "year2026e2": "Algılama, otonom sistemler ve YZ/ML alanlarında süregelen Ar-Ge"
+    },
+    "team": {
+      "ahmet": { "name": "Ahmet Güneş", "role": "Kurucu & Baş Mühendis" },
+      "bilal": { "name": "Bilal Bayram", "role": "Elektronik Mühendisi" },
+      "berkant": { "name": "Berkant Kırıkkant", "role": "Sistem Mühendisi" },
+      "fehim": { "name": "Fehim Kuş", "role": "Mekatronik Mühendisi" },
+      "yigit": { "name": "Yiğit Tilaver", "role": "Yazılım Mühendisi" }
+    }
+  },
+  "CareersPage": {
+    "metadata": {
+      "title": "D7 Technology'de Kariyer",
+      "description": "Şu an açık pozisyon bulunmuyor — ancak her zaman istisnai mühendisler ve araştırmacılarla ilgileniyoruz. Bize ulaşın."
+    },
+    "heroLabel": "// EKİBE KATIL",
+    "heroTitle": "Kariyer",
+    "heroDescription": "Ciddi mühendislik inşa ediyoruz — ve ciddi mühendislere ihtiyacımız var. Önemli otonom sistemler, algılama ve YZ problemleri üzerinde çalışın.",
+    "statusLabel": "// DURUM",
+    "noPositions": "Açık pozisyon yok",
+    "rolesTitle": "Yeni pozisyonlar burada duyurulacak.",
+    "rolesDescription": "Şu anda aktif olarak işe almıyoruz; ancak projelerimiz büyüdükçe bu değişiyor. Takipte kalın — ya da ilan açmadan önce bize ulaşın.",
+    "ctaLabel": "// AÇIK BAŞVURU",
+    "ctaTitle": "İstisnai mühendisler beklemez.",
+    "ctaDescription": "Otonom sistemler, algılama veya sensör füzyonu alanında üst düzey çalışıyorsanız — sizi tanımak isteriz. CV'nizi veya LinkedIn profilinizin linkini içeren bir mesaj gönderin.",
+    "ctaButton": "İletişime Geç"
+  },
+  "ContactPage": {
+    "metadata": {
+      "title": "D7 Technology ile İletişim",
+      "description": "Soru, iş birliği, araştırma ortaklığı veya kariyer fırsatları için D7 Technology ile iletişime geçin."
+    },
+    "heroLabel": "// İLETİŞİME GEÇ",
+    "heroTitle": "İletişim",
+    "heroDescription": "Sorular, iş birlikleri, araştırma ortaklıkları veya sadece merhaba demek için.",
+    "reachOut": "Bize Ulaşın",
+    "websiteLabel": "Web Sitesi",
+    "locationLabel": "Konum",
+    "locationValue": "İstanbul, Türkiye",
+    "followUs": "Bizi Takip Edin",
+    "responseTimeLabel": "// Yanıt Süresi",
+    "responseTimeText": "Genellikle 1–2 iş günü içinde yanıt veriyoruz. Acil durumlar için LinkedIn üzerinden ulaşın.",
+    "nameLabel": "Ad Soyad",
+    "emailLabel": "E-posta",
+    "subjectLabel": "Konu",
+    "messageLabel": "Mesaj",
+    "namePlaceholder": "Ad Soyad",
+    "emailPlaceholder": "eposta@adresiniz.com",
+    "messagePlaceholder": "Talebinizi bize anlatın...",
+    "submitButton": "Mesaj Gönder",
+    "sending": "Gönderiliyor...",
+    "subjectPlaceholder": "Konu seçin...",
+    "subjectGeneral": "Genel Soru",
+    "subjectCollaboration": "İş Birliği",
+    "subjectCareers": "Kariyer",
+    "subjectPress": "Basın",
+    "validationNameMin": "Ad en az 2 karakter olmalıdır",
+    "validationEmailInvalid": "Lütfen geçerli bir e-posta adresi girin",
+    "validationSubjectRequired": "Lütfen bir konu seçin",
+    "validationMessageMin": "Mesaj en az 20 karakter olmalıdır",
+    "successTitle": "Mesaj Gönderildi",
+    "successDescription": "Bize ulaştığınız için teşekkürler. En kısa sürede geri döneceğiz.",
+    "successLabel": "// MESAJ ALINDI",
+    "sendAnother": "Başka mesaj gönder"
+  },
+  "ProjectsPage": {
+    "metadata": {
+      "title": "Projeler",
+      "description": "D7 Technology'nin otonom sistemler, algılama ve YZ alanlarındaki araştırma ve mühendislik projelerini keşfedin."
+    },
+    "sectionLabel": "// ARAŞTIRMA & MÜHENDİSLİK",
+    "title": "Projeler",
+    "description": "Otonom sistemler, algılama ve YZ alanlarında araştırma ve mühendislik — erken aşama prototipten saha konuşlandırmasına.",
+    "filterAll": "Tümü",
+    "filterAutonomous": "Otonom Sistemler",
+    "filterSensing": "Algılama",
+    "filterAiMl": "YZ / ML",
+    "empty": "// Bu kategoride henüz proje yok."
+  },
+  "AdvisorPage": {
+    "metadata": {
+      "title": "ADVISOR: Rehberlik için Otonom Yüzey Gemisi",
+      "description": "AB ITEA Programı — Kısıtlı deniz ortamlarında kooperatif navigasyon için eskort tipi Otonom Yüzey Aracı."
+    },
+    "title": "ADVISOR: Rehberlik için Otonom Yüzey Gemisi",
+    "subtitle": "AB ITEA Programı — Eskort Tipi Otonom Yüzey Aracı",
+    "prjId": "PRJ-002",
+    "sectionLabel": "// OTONOM SİSTEMLER · AB ITEA",
+    "present": "Günümüz",
+    "overviewTitle": "Genel Bakış",
+    "overviewText": "ADVISOR, AB ITEA programı kapsamında geliştirilen eskort tipi bir Otonom Yüzey Aracıdır (ASV); limanlar ve kıyı yakın alanlar dahil kısıtlı deniz ortamlarında otonom rehberlik ve kooperatif navigasyona odaklanmaktadır. Proje, dinamik ve kalabalık su yollarında güvenli operasyon sağlamak için insan gözetiminin otomatik karar alma ile bir arada var olduğu denetimli özerkliği ön plana çıkarmaktadır.",
+    "fieldTrialTitle": "Saha Denemesi Kurulumu",
+    "fieldTrialText": "Saha denemeleri, navigasyon algoritmalarını, sensör füzyonu performansını ve gerçek koşullar altında otonom karar almayı doğrulamak için temsili deniz ortamlarında yürütülmektedir. ASV, konvoy operasyonları, engel kaçınma ve üsse geri dönüş manevraları dahil yapılandırılmış test senaryolarından geçmektedir.",
+    "fieldTrialCaption": "ADVISOR saha denemesi — liman ortamında otonom yüzey gemisi",
+    "fieldTrialImageAlt": "Otonom yüzey aracı — liman ve eskort denemeleri için Maritime Robotics platformu",
+    "navTitle": "Dinamik Ortamlarda Navigasyon",
+    "navText": "ADVISOR platformu, karmaşık deniz ortamlarında güçlü durumsal farkındalık sağlamak için kapsamlı çok modlu sensör paketi entegre etmektedir. Sensör verileri, engel tespiti, yol planlama ve adaptif navigasyonu desteklemek için gerçek zamanlı olarak füzyon edilmektedir.",
+    "sensorTableLabel": "Sensör paketi özellikleri",
+    "sensorColSensor": "Sensör",
+    "sensorColSystem": "Sistem",
+    "sensorColFunction": "İşlev",
+    "imuFull": "Atalet Ölçüm Birimi",
+    "imuDesc": "Tutum ve hareket tahmini",
+    "gnssFull": "Küresel Navigasyon Uydu Sistemi",
+    "gnssDesc": "Küresel konumlandırma ve hız",
+    "cameraFull": "Görsel Algılama Sistemi",
+    "cameraDesc": "Nesne tespiti ve sahne anlama",
+    "lidarFull": "3D Lazer Haritalama",
+    "lidarDesc": "Yüksek çözünürlüklü 3D çevre haritalama",
+    "radarFull": "Milimetre Dalga Radarı",
+    "radarDesc": "Her hava koşulunda engel tespiti",
+    "metFull": "Meteoroloji Sensörleri",
+    "metDesc": "Rüzgar hızı, yönü, sıcaklık, basınç",
+    "bathyTitle": "Batimetri Haritalama ve Çevresel Veri Toplama",
+    "bathyText1": "ADVISOR, navigasyona ek olarak operasyonlar sırasında çevresel ve oşinografik veri toplamaktadır. Gemideki meteoroloji sensörleri rüzgar hızını, yönünü, hava sıcaklığını ve basıncı sürekli izleyerek rota planlamasını destekleyen bağlamsal veriler sağlamaktadır.",
+    "bathyText2": "Batimetrik haritalama yetenekleri liman araştırmasını ve sığ su navigasyonunu destekleyerek ASV'nin daha zengin çevre modeliyle karar almasına katkıda bulunmaktadır.",
+    "bathyCaption": "Saha operasyonları sırasında batimetri ve çevresel veri toplama",
+    "bathyImageAlt": "Ekranda 3D batimetrik harita: operasyonlar sırasında araştırma katmanlarıyla renk kodlu deniz tabanı derinlikleri"
+  },
+  "MultistaticPage": {
+    "metadata": {
+      "title": "Çok-Statik Radar Sistemleri",
+      "description": "Çok hedef takibi ve uzamsal çeşitlilik için uzamsal dağılımlı radar — D7 Technology'nin IEEE RadarConf25 araştırması."
+    },
+    "title": "Çok-Statik Radar Sistemleri",
+    "subtitle": "Çok hedef takibi ve uzamsal çeşitlilik için uzamsal dağılımlı radar",
+    "prjId": "PRJ-003",
+    "sectionLabel": "// ALGILAMA · HEDEF TAKİBİ",
+    "overviewTitle": "Genel Bakış",
+    "overviewText": "Çok-statik radar, hedefleri birden fazla açıdan gözlemlemek için ayrılmış verici ve alıcılar kullanır; düşük-RKS hedefleri için tespit sağlamlığını artırır ve kargaşaya duyarlılığı azaltır. Uzamsal çeşitlilikten yararlanarak monostatik radarın temel sınırlamalarını aşar ve hedef takibi için daha zengin ölçüm geometrisi sağlar.",
+    "simulationTitle": "Simülasyon Haritası",
+    "simulationText": "Simülasyon ortamları, radar düğümlerinin geometrik dağılımını, hedef yörüngelerini ve ölçüm belirsizliğini modellemektedir. Çeşitli hedef senaryolarında Monte Carlo denemeleri, plot füzyon algoritmalarını doğrulamak ve tespit olasılığı ile konum doğruluğu dahil izleme performans metriklerini değerlendirmek için kullanılmaktadır.",
+    "simulationCaption": "Çok-statik radar simülasyon haritası — düğüm dağılımı ve hedef izleme senaryosu",
+    "simulationImageAlt": "Çok panelli simülasyon haritaları: kilometre cinsinden mesafe üzerinde atmosferik ve polarimetrik radar alanları",
+    "demoTitle": "Çok-Statik Sistemler Demo",
+    "demoText": "Aşağıdaki demo, simüle edilmiş senaryoda plot düzeyi veri füzyonu, iz başlatma ve çok hedef izleme performansı dahil çok-statik radar sistemi işleme hattını göstermektedir.",
+    "demoIframeTitle": "Çok-Statik Radar Demo",
+    "publicationsLabel": "// IEEE YAYINLARI"
+  },
+  "WearableSensorsPage": {
+    "metadata": {
+      "title": "Giyilebilir Sensörler & Performans Analizi",
+      "description": "D7 Technology'nin UWB ve IMU tabanlı insan hareketi takibi ve performans analizi araştırması. IEEE SIU 2025 yayını."
+    },
+    "title": "Giyilebilir Sensörler & Performans Analizi",
+    "subtitle": "UWB ve IMU tabanlı insan hareketi takibi ve performans analizi",
+    "prjId": "PRJ-001",
+    "sectionLabel": "// ALGILAMA · SAĞLIK & SPOR",
+    "overviewTitle": "Genel Bakış",
+    "overviewText": "UWB (Ultra-Geniş Bant) ve IMU (Atalet Ölçüm Birimi) teknolojilerini birleştiren giyilebilir sensör sistemleri üzerine araştırma — kesin insan hareketi takibi, düşme tespiti ve spor performans analizi. Bu proje, kontrollü laboratuvar ortamları ve gerçek dünya saha deneylerini kapsar.",
+    "localizationTitle": "Kontrollü Yerelleştirme Test Kurulumu",
+    "localizationText": "Kontrollü koşullar altında UWB tabanlı yerelleştirme doğruluğunu doğrulamak için yapılandırılmış kapalı alan test ortamı oluşturulmuştur. Birden fazla çapa düğümü kalibre edilmiş ızgaraya yerleştirilmiş, desimetrenin altında konum doğruluğu sağlanmıştır. IMU verileri tamamlayıcı atalet ölçümleri için senkronize edilmiştir.",
+    "localizationImageAlt": "Kontrollü kapalı alan testlerinde kullanılan hassas yerelleştirme arayüzünü gösteren iş istasyonu ekranı",
+    "localizationCaption": "UWB çapa yerleşimi ile kontrollü yerelleştirme test ortamı",
+    "motionTitle": "Veriye Dayalı Hareket Değerlendirmesi",
+    "motionText": "Toplanan sensör verileri, hareket durumlarını sınıflandırmak ve düşme gibi anomalileri tespit etmek için makine öğrenmesi hatları aracılığıyla işlenmiştir. UWB konum verileri ve IMU okumalarının füzyonu, yüksek duyarlılıkla düşme olaylarını tespit etmektedir.",
+    "motionImageAlt": "Analiz hatları için büyük ölçekli hareket ve sensörden türetilen verileri temsil eden soyut görselleştirme",
+    "motionCaption": "Hareket değerlendirme hattı — sensör füzyonu ve ML sınıflandırma sonuçları",
+    "fieldTitle": "Saha Deneyleri",
+    "fieldText": "Sistem performansını laboratuvar dışında doğrulamak için spor ve sağlık ortamlarında gerçek dünya denemeleri yürütülmüştür. Saha deneyleri, sistemin çok yollu yayılım ve vücut tıkanmasına karşı sağlamlığını test etmiş; pratik konuşlandırmalarda güvenilir düşme tespiti göstermiştir.",
+    "fieldImageAlt": "Hareket yakalama tarzı saha deneyinde ayak bileğine takılı sensörler takan kapalı alanda sporcu",
+    "fieldCaption": "Saha deney kurulumu — gerçek dünya giyilebilir sensör konuşlandırması",
+    "publicationsLabel": "// IEEE YAYINLARI"
+  },
+  "UnderwaterGlidersPage": {
+    "metadata": {
+      "title": "Otonom Su Altı Planörleri",
+      "description": "Su altı keşfi ve algılama için uzun dayanıklı otonom platformlar — D7 Technology'nin yaklaşan araştırması."
+    },
+    "title": "Otonom Su Altı Planörleri",
+    "subtitle": "Su altı keşfi ve algılama için uzun dayanıklı otonom platformlar",
+    "description": "Uzun dayanıklı okyanus izleme, çevresel veri toplama ve denizaltı algılama için otonom su altı planörü platformlarının geliştirilmesi. Enerji verimli itki, dinamik su altı ortamlarında navigasyon ve gerçek zamanlı veri iletimi üzerine odaklanılmaktadır.",
+    "prjId": "PRJ-004",
+    "sectionLabel": "// OTONOM SİSTEMLER · SU ALTI",
+    "statusLabel": "// DURUM: GELİŞTİRMEDE",
+    "researchTitle": "Araştırma Devam Ediyor",
+    "updatesComingSoon": "Güncellemeler yakında"
+  }
+}

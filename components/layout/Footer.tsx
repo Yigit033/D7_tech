@@ -1,6 +1,7 @@
 'use client';
 
-import Link from 'next/link';
+import { useTranslations } from 'next-intl';
+import { Link } from '@/i18n/navigation';
 import { Linkedin, ExternalLink } from 'lucide-react';
 
 function YouTubeIcon({ size = 14, className = '' }: { size?: number; className?: string }) {
@@ -18,26 +19,28 @@ function YouTubeIcon({ size = 14, className = '' }: { size?: number; className?:
   );
 }
 
-const footerLinks = {
-  company: [
-    { label: 'About', href: '/about' },
-    { label: 'Projects', href: '/projects' },
-    { label: 'Careers', href: '/careers' },
-    { label: 'Contact', href: '/contact' },
-  ],
-  projects: [
-    { label: 'Wearable Sensors', href: '/projects/wearable-sensors' },
-    { label: 'ADVISOR ASV', href: '/projects/advisor' },
-    { label: 'Multi-Static Radar', href: '/projects/multistatic' },
-    { label: 'Underwater Gliders', href: '/projects/underwater-gliders' },
-  ],
-  social: [
-    { label: 'LinkedIn', href: 'https://www.linkedin.com/company/d7-technology/', icon: Linkedin },
-    { label: 'YouTube', href: 'https://www.youtube.com/@stegtu3983', icon: YouTubeIcon },
-  ],
-};
-
 export default function Footer() {
+  const t = useTranslations('Footer');
+
+  const companyLinks = [
+    { labelKey: 'links.about' as const, href: '/about' },
+    { labelKey: 'links.projects' as const, href: '/projects' },
+    { labelKey: 'links.careers' as const, href: '/careers' },
+    { labelKey: 'links.contact' as const, href: '/contact' },
+  ];
+
+  const projectLinks = [
+    { labelKey: 'projectLinks.wearableSensors' as const, href: '/projects/wearable-sensors' },
+    { labelKey: 'projectLinks.advisorAsv' as const, href: '/projects/advisor' },
+    { labelKey: 'projectLinks.multiStaticRadar' as const, href: '/projects/multistatic' },
+    { labelKey: 'projectLinks.underwaterGliders' as const, href: '/projects/underwater-gliders' },
+  ];
+
+  const socialLinks = [
+    { label: 'LinkedIn', href: 'https://www.linkedin.com/company/d7-technology/', Icon: Linkedin },
+    { label: 'YouTube', href: 'https://www.youtube.com/@stegtu3983', Icon: YouTubeIcon },
+  ];
+
   return (
     <footer className="relative border-t border-[#1a2540] bg-[#020409] overflow-hidden" role="contentinfo">
       <div className="absolute inset-0 grid-bg opacity-30 pointer-events-none" aria-hidden="true" />
@@ -55,11 +58,11 @@ export default function Footer() {
               </span>
             </Link>
             <p className="text-sm text-slate-500 leading-relaxed max-w-xs">
-              Designing intelligent autonomous platforms and advanced sensing technologies for real-world applications.
+              {t('tagline')}
             </p>
             <div className="mt-4 flex items-center gap-1.5" aria-hidden="true">
               <span className="font-mono text-[10px] text-sky-500/60 tracking-widest">
-                {'// SYS:ONLINE'}
+                {t('status')}
               </span>
               <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 pulse-dot" />
             </div>
@@ -68,16 +71,16 @@ export default function Footer() {
           {/* Company */}
           <div>
             <h4 className="font-mono text-[11px] tracking-widest text-slate-500 uppercase mb-4">
-              Company
+              {t('company')}
             </h4>
             <ul className="space-y-2.5" role="list">
-              {footerLinks.company.map((link) => (
+              {companyLinks.map((link) => (
                 <li key={link.href}>
                   <Link
                     href={link.href}
                     className="text-sm text-slate-400 hover:text-slate-100 transition-colors duration-200"
                   >
-                    {link.label}
+                    {t(link.labelKey)}
                   </Link>
                 </li>
               ))}
@@ -87,16 +90,16 @@ export default function Footer() {
           {/* Projects */}
           <div>
             <h4 className="font-mono text-[11px] tracking-widest text-slate-500 uppercase mb-4">
-              Projects
+              {t('projects')}
             </h4>
             <ul className="space-y-2.5" role="list">
-              {footerLinks.projects.map((link) => (
+              {projectLinks.map((link) => (
                 <li key={link.href}>
                   <Link
                     href={link.href}
                     className="text-sm text-slate-400 hover:text-slate-100 transition-colors duration-200"
                   >
-                    {link.label}
+                    {t(link.labelKey)}
                   </Link>
                 </li>
               ))}
@@ -106,10 +109,10 @@ export default function Footer() {
           {/* Connect */}
           <div>
             <h4 className="font-mono text-[11px] tracking-widest text-slate-500 uppercase mb-4">
-              Connect
+              {t('connect')}
             </h4>
             <ul className="space-y-3" role="list">
-              {footerLinks.social.map((link) => (
+              {socialLinks.map((link) => (
                 <li key={link.label}>
                   <a
                     href={link.href}
@@ -117,7 +120,7 @@ export default function Footer() {
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 text-sm text-slate-400 hover:text-slate-100 transition-colors duration-200 group"
                   >
-                    <link.icon size={14} className="text-sky-500/60 group-hover:text-sky-400 transition-colors" />
+                    <link.Icon size={14} className="text-sky-500/60 group-hover:text-sky-400 transition-colors" />
                     {link.label}
                     <ExternalLink size={10} className="opacity-0 group-hover:opacity-40 transition-opacity" aria-hidden="true" />
                   </a>
@@ -134,7 +137,7 @@ export default function Footer() {
         {/* Bottom bar */}
         <div className="border-t border-[#1a2540] pt-6 flex flex-col sm:flex-row items-center justify-between gap-3">
           <p className="text-xs text-slate-600">
-            &copy; {new Date().getFullYear()} D7 Technology. All rights reserved.
+            &copy; {new Date().getFullYear()} {t('rights')}
           </p>
         </div>
       </div>
