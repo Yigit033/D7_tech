@@ -4,9 +4,17 @@ import { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { z } from 'zod';
-import { Loader as Loader2, CircleCheck as CheckCircle, MapPin, Globe, Linkedin, Twitter, Instagram } from 'lucide-react';
+import { Loader as Loader2, CircleCheck as CheckCircle, MapPin, Globe, Linkedin } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import SectionLabel from '@/components/common/SectionLabel';
+
+function YouTubeIcon({ size = 15, className = '' }: { size?: number; className?: string }) {
+  return (
+    <svg width={size} height={size} viewBox="0 0 24 24" fill="currentColor" className={className} aria-hidden="true">
+      <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+    </svg>
+  );
+}
 
 const schema = z.object({
   name: z.string().min(2, 'Name must be at least 2 characters'),
@@ -35,9 +43,8 @@ const contactInfo = [
 ];
 
 const social = [
-  { icon: Linkedin, label: 'LinkedIn', href: 'https://linkedin.com' },
-  { icon: Twitter, label: 'Twitter / X', href: 'https://twitter.com' },
-  { icon: Instagram, label: 'Instagram', href: 'https://instagram.com' },
+  { icon: Linkedin, label: 'LinkedIn', href: 'https://www.linkedin.com/company/d7-technology/' },
+  { icon: YouTubeIcon, label: 'YouTube', href: 'https://www.youtube.com/@stegtu3983' },
 ];
 
 const subjectOptions = [
@@ -59,7 +66,12 @@ export default function ContactPage() {
   } = useForm<FormData>({ resolver: zodResolver(schema) });
 
   const onSubmit = async (data: FormData) => {
-    await new Promise((r) => setTimeout(r, 1200));
+    const res = await fetch('/api/contact', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(data),
+    });
+    if (!res.ok) throw new Error('Failed to send');
     setSubmitted(true);
     reset();
   };
