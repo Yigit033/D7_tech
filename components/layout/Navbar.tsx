@@ -20,7 +20,6 @@ export default function Navbar() {
   const navLinks = [
     { label: t('projects'), href: '/projects' },
     { label: t('about'), href: '/about' },
-    { label: t('careers'), href: '/careers' },
   ];
 
   useEffect(() => {

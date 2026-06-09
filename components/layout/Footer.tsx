@@ -25,7 +25,6 @@ export default function Footer() {
   const companyLinks = [
     { labelKey: 'links.about' as const, href: '/about' },
     { labelKey: 'links.projects' as const, href: '/projects' },
-    { labelKey: 'links.careers' as const, href: '/careers' },
     { labelKey: 'links.contact' as const, href: '/contact' },
   ];
 

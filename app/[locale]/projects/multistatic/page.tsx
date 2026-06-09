@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Image from 'next/image';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
+import { getAlternates } from '@/lib/metadata';
 import { Link } from '@/i18n/navigation';
 import { ArrowLeft } from 'lucide-react';
 import SectionLabel from '@/components/common/SectionLabel';
@@ -16,6 +17,7 @@ export async function generateMetadata({ params }: { params: { locale: string } 
     title: t('metadata.title'),
     description: t('metadata.description'),
     openGraph: { title: t('metadata.title'), description: t('metadata.description'), type: 'article' },
+    alternates: getAlternates('/projects/multistatic'),
   };
 }
 

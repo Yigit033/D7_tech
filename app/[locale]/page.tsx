@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
+import { getAlternates } from '@/lib/metadata';
 import Hero from '@/components/sections/Hero';
 import ExpertiseGrid from '@/components/sections/ExpertiseGrid';
 import FeaturedProjects from '@/components/sections/FeaturedProjects';
@@ -19,6 +20,7 @@ export async function generateMetadata({
       description: t('metadata.description'),
       type: 'website',
     },
+    alternates: getAlternates('/'),
   };
 }
 

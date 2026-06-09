@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
+import { getAlternates } from '@/lib/metadata';
 import ContactClient from './ContactClient';
 
 export async function generateMetadata({
@@ -12,6 +13,7 @@ export async function generateMetadata({
     title: t('metadata.title'),
     description: t('metadata.description'),
     openGraph: { title: t('metadata.title'), description: t('metadata.description'), type: 'website' },
+    alternates: getAlternates('/contact'),
   };
 }
 

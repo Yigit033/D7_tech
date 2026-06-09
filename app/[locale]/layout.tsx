@@ -2,7 +2,7 @@ import '../globals.css';
 import type { Metadata } from 'next';
 import { Inter, Space_Grotesk } from 'next/font/google';
 import { NextIntlClientProvider } from 'next-intl';
-import { getMessages, setRequestLocale } from 'next-intl/server';
+import { getMessages, getTranslations, setRequestLocale } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import Navbar from '@/components/layout/Navbar';
 import Footer from '@/components/layout/Footer';
@@ -73,24 +73,20 @@ export default async function LocaleLayout({
 
   setRequestLocale(locale);
 
-  const messages = await getMessages();
-
-  const baseUrl = 'https://d7tech.net';
+  const [messages, tCommon] = await Promise.all([
+    getMessages(),
+    getTranslations({ locale, namespace: 'Common' }),
+  ]);
 
   return (
     <html lang={locale} className={`${inter.variable} ${spaceGrotesk.variable} dark`}>
-      <head>
-        <link rel="alternate" hrefLang="tr" href={`${baseUrl}/tr`} />
-        <link rel="alternate" hrefLang="en" href={`${baseUrl}/en`} />
-        <link rel="alternate" hrefLang="x-default" href={`${baseUrl}/tr`} />
-      </head>
       <body className="font-sans antialiased bg-[#020409] text-[#f1f5f9]">
         <NextIntlClientProvider messages={messages}>
           <a
             href="#main-content"
             className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[100] focus:px-4 focus:py-2 focus:bg-sky-500 focus:text-[#020409] focus:rounded focus:text-sm focus:font-semibold"
           >
-            {locale === 'tr' ? 'Ana içeriğe geç' : 'Skip to main content'}
+            {tCommon('skipToMainContent')}
           </a>
           <Navbar />
           <main id="main-content">{children}</main>
