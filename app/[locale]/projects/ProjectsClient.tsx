@@ -37,7 +37,7 @@ export default function ProjectsClient() {
         </div>
       </section>
 
-      <section className="border-y border-[#1a2540] bg-[#0a0f1e]/50 sticky top-16 z-30 backdrop-blur-sm" role="toolbar" aria-label={t('title')}>
+      <section className="border-y border-[#1a2540] bg-[#0a0f1e]/50" role="toolbar" aria-label={t('title')}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex gap-1 overflow-x-auto py-3 scrollbar-none" role="tablist">
             {filters.map((f) => (

@@ -11,8 +11,6 @@ export default function Navbar() {
   const pathname = usePathname();
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
-  const [hidden, setHidden] = useState(false);
-  const lastYRef = useRef(0);
   const mobileMenuRef = useRef<HTMLDivElement>(null);
 
   const closeMobile = useCallback(() => setMobileOpen(false), []);
@@ -38,30 +36,14 @@ export default function Navbar() {
   }, [mobileOpen]);
 
   useEffect(() => {
-    const DELTA = 6; // minimum px of scroll before toggling navbar
-    const handleScroll = () => {
-      const y = window.scrollY;
-      setScrolled(y > 50);
-      if (y <= 80) {
-        setHidden(false);
-        lastYRef.current = y;
-      } else if (y > lastYRef.current + DELTA) {
-        setHidden(true);
-        lastYRef.current = y;
-      } else if (y < lastYRef.current - DELTA) {
-        setHidden(false);
-        lastYRef.current = y;
-      }
-    };
+    const handleScroll = () => setScrolled(window.scrollY > 50);
     window.addEventListener('scroll', handleScroll, { passive: true });
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
-      if (e.key === 'Escape' && mobileOpen) {
-        closeMobile();
-      }
+      if (e.key === 'Escape' && mobileOpen) closeMobile();
     };
     document.addEventListener('keydown', handleKeyDown);
     return () => document.removeEventListener('keydown', handleKeyDown);
@@ -72,9 +54,7 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-transform duration-300 ${
-        hidden && !mobileOpen ? '-translate-y-full' : 'translate-y-0'
-      } ${
+      className={`fixed top-0 left-0 right-0 z-50 transition-colors duration-300 ${
         scrolled
           ? 'bg-[#020409]/95 backdrop-blur-md border-b border-[#1a2540]'
           : 'bg-transparent'
