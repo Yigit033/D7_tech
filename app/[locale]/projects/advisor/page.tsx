@@ -74,7 +74,7 @@ export default async function AdvisorPage({ params }: { params: { locale: string
           <p className="text-slate-400 leading-relaxed mb-6 text-sm sm:text-base">{t('fieldTrialText')}</p>
           <figure className="m-0">
             <div className="relative w-full aspect-video rounded-sm bg-[#0a0f1e] border border-[#1a2540] overflow-hidden">
-              <Image src="/images/projects/advisor_field_trial.png" alt={t('fieldTrialImageAlt')} fill className="object-cover object-center" sizes="(max-width: 896px) 100vw, 896px" />
+              <Image src="/images/projects/advisor_field_trial.png" alt={t('fieldTrialImageAlt')} fill className="object-contain" sizes="(max-width: 896px) 100vw, 896px" />
               <div className="absolute inset-0 pointer-events-none bg-gradient-to-t from-[#020409]/50 via-transparent to-transparent" aria-hidden="true" />
             </div>
             <figcaption className="mt-3 text-xs text-slate-600 text-center sm:text-left">{t('fieldTrialCaption')}</figcaption>
