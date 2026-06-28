@@ -12,7 +12,7 @@ export async function POST(req: Request) {
       },
       body: JSON.stringify({
         from: 'D7 Technology Contact <onboarding@resend.dev>',
-        to: 'yigitd7tech@gmail.com',
+        to: 'info@d7tech.net',
         reply_to: email,
         subject: `[D7 Contact] ${subject} — ${name}`,
         html: `
