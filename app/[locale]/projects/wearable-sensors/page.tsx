@@ -59,7 +59,7 @@ export default async function WearableSensorsPage({ params }: { params: { locale
             {project.tags.map((tag) => <TechTag key={tag} tag={tag} />)}
           </div>
           <div className="mt-8">
-            <ProjectCover src={project.coverImage} alt={project.coverImageAlt} priority />
+            <ProjectCover src={project.coverImage} alt={project.coverImageAlt} priority sizes="(max-width: 896px) 100vw, 896px" />
           </div>
         </header>
 

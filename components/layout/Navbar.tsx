@@ -38,15 +38,20 @@ export default function Navbar() {
   }, [mobileOpen]);
 
   useEffect(() => {
+    const DELTA = 6; // minimum px of scroll before toggling navbar
     const handleScroll = () => {
       const y = window.scrollY;
       setScrolled(y > 50);
-      if (y > 100 && y > lastYRef.current) {
-        setHidden(true);
-      } else {
+      if (y <= 80) {
         setHidden(false);
+        lastYRef.current = y;
+      } else if (y > lastYRef.current + DELTA) {
+        setHidden(true);
+        lastYRef.current = y;
+      } else if (y < lastYRef.current - DELTA) {
+        setHidden(false);
+        lastYRef.current = y;
       }
-      lastYRef.current = y;
     };
     window.addEventListener('scroll', handleScroll, { passive: true });
     return () => window.removeEventListener('scroll', handleScroll);

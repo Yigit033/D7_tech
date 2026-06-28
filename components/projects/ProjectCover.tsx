@@ -7,9 +7,18 @@ type ProjectCoverProps = {
   priority?: boolean;
   className?: string;
   objectFit?: 'cover' | 'contain';
+  /** sizes hint for Next.js image optimization. Defaults to card grid sizes. */
+  sizes?: string;
 };
 
-export default function ProjectCover({ src, alt, priority = false, className = '', objectFit = 'cover' }: ProjectCoverProps) {
+export default function ProjectCover({
+  src,
+  alt,
+  priority = false,
+  className = '',
+  objectFit = 'cover',
+  sizes = '(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw',
+}: ProjectCoverProps) {
   return (
     <div
       className={`relative w-full aspect-video rounded-sm bg-[#020409] border border-[#1a2540] overflow-hidden ${className}`}
@@ -19,7 +28,8 @@ export default function ProjectCover({ src, alt, priority = false, className = '
         alt={alt}
         fill
         className={objectFit === 'contain' ? 'object-contain' : 'object-cover'}
-        sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+        sizes={sizes}
+        quality={90}
         priority={priority}
       />
       <div
