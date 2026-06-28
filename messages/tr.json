@@ -40,7 +40,7 @@
     "projectLinks": {
       "wearableSensors": "Giyilebilir Sensörler",
       "advisorAsv": "ADVISOR ASV",
-      "multiStaticRadar": "Çok-Statik Radar",
+      "multiStaticRadar": "Multistatik Radar",
       "underwaterGliders": "Su Altı Planörleri"
     }
   },
@@ -116,12 +116,12 @@
       "subtitle": "AB ITEA Programı — Eskort Tipi Otonom Yüzey Aracı"
     },
     "multistatic": {
-      "title": "Çok-Statik Radar Sistemleri",
+      "title": "Multistatik Radar Sistemleri",
       "subtitle": "Çok hedef takibi ve uzamsal çeşitlilik için uzamsal dağılımlı radar"
     },
     "underwater-gliders": {
       "title": "Otonom Su Altı Planörleri",
-      "subtitle": "Su altı keşfi ve algılama için uzun dayanıklı otonom platformlar"
+      "subtitle": "Su altı keşfi ve algılama için uzun süreli otonom platformlar"
     }
   },
   "HomePage": {
@@ -141,7 +141,7 @@
     "missionLabel": "// MİSYON",
     "missionTitle": "Fiziksel dünyaya zeka kazandırmak",
     "missionP1": "D7 Technology, ileri araştırma ile gerçek dünya sistemleri arasındaki boşluğu kapatmak için var. Zorlayıcı ortamlarda güvenilir biçimde çalışan platformlar inşa etmek için titiz sinyal işleme, modern makine öğrenmesi ve mühendislik disiplinini bir araya getiriyoruz.",
-    "missionP2": "Çalışmalarımız otonom yüzey gemilerini, çok-statik radar takibini, giyilebilir sensör sistemlerini ve YZ tabanlı algılamayı kapsıyor; tümü hakemli araştırmalara dayalı ve sahada test edilmiş.",
+    "missionP2": "Çalışmalarımız otonom yüzey gemilerini, multistatik radar takibini, giyilebilir sensör sistemlerini ve YZ tabanlı algılamayı kapsıyor; tümü hakemli araştırmalara dayalı ve sahada test edilmiş.",
     "missionP3": "Derin teknolojinin sınırında faaliyet gösteriyor ve araştırmanın konuşlandırmayla buluştuğu standartta inşa ediyoruz.",
     "teamLabel": "// EKİP",
     "teamTitle": "D7'nin Arkasındaki İnsanlar",
@@ -159,7 +159,7 @@
     "timeline": {
       "year2025Label": "2025",
       "year2025e1": "IEEE yayını: UWB Verisiyle Düşme Tespiti (SIU 2025)",
-      "year2025e2": "IEEE yayını: Çok-Statik Çok-Hedef Takibi (RadarConf25, Krakow)",
+      "year2025e2": "IEEE yayını: Multistatik Çok-Hedef Takibi (RadarConf25, Krakow)",
       "yearJan2026Label": "Oca 2026",
       "yearJan2026e1": "ADVISOR AB ITEA projesi başlatıldı — otonom yüzey gemisi programı",
       "year2026Label": "2026",
@@ -285,22 +285,22 @@
   },
   "MultistaticPage": {
     "metadata": {
-      "title": "Çok-Statik Radar Sistemleri",
+      "title": "Multistatik Radar Sistemleri",
       "description": "Çok hedef takibi ve uzamsal çeşitlilik için uzamsal dağılımlı radar — D7 Technology'nin IEEE RadarConf25 araştırması."
     },
-    "title": "Çok-Statik Radar Sistemleri",
+    "title": "Multistatik Radar Sistemleri",
     "subtitle": "Çok hedef takibi ve uzamsal çeşitlilik için uzamsal dağılımlı radar",
     "prjId": "PRJ-003",
     "sectionLabel": "// ALGILAMA · HEDEF TAKİBİ",
     "overviewTitle": "Genel Bakış",
-    "overviewText": "Çok-statik radar, hedefleri birden fazla açıdan gözlemlemek için ayrılmış verici ve alıcılar kullanır; düşük-RKS hedefleri için tespit sağlamlığını artırır ve kargaşaya duyarlılığı azaltır. Uzamsal çeşitlilikten yararlanarak monostatik radarın temel sınırlamalarını aşar ve hedef takibi için daha zengin ölçüm geometrisi sağlar.",
+    "overviewText": "Multistatik radar, hedefleri birden fazla açıdan gözlemlemek için ayrılmış verici ve alıcılar kullanır; düşük-RKS hedefleri için tespit sağlamlığını artırır ve clutter ile parazite karşı duyarlılığı azaltır. Uzamsal çeşitlilikten yararlanarak monostatik radarın temel sınırlamalarını aşar ve hedef takibi ile sınıflandırma için daha zengin ölçüm geometrisi sağlar.",
     "simulationTitle": "Simülasyon Haritası",
     "simulationText": "Simülasyon ortamları, radar düğümlerinin geometrik dağılımını, hedef yörüngelerini ve ölçüm belirsizliğini modellemektedir. Çeşitli hedef senaryolarında Monte Carlo denemeleri, plot füzyon algoritmalarını doğrulamak ve tespit olasılığı ile konum doğruluğu dahil izleme performans metriklerini değerlendirmek için kullanılmaktadır.",
-    "simulationCaption": "Çok-statik radar simülasyon haritası — düğüm dağılımı ve hedef izleme senaryosu",
+    "simulationCaption": "Multistatik radar simülasyon haritası — düğüm dağılımı ve hedef izleme senaryosu",
     "simulationImageAlt": "Çok panelli simülasyon haritaları: kilometre cinsinden mesafe üzerinde atmosferik ve polarimetrik radar alanları",
-    "demoTitle": "Çok-Statik Sistemler Demo",
-    "demoText": "Aşağıdaki demo, simüle edilmiş senaryoda plot düzeyi veri füzyonu, iz başlatma ve çok hedef izleme performansı dahil çok-statik radar sistemi işleme hattını göstermektedir.",
-    "demoIframeTitle": "Çok-Statik Radar Demo",
+    "demoTitle": "Multistatik Sistemler Demo",
+    "demoText": "Aşağıdaki demo, simüle edilmiş senaryoda plot düzeyi veri füzyonu, iz başlatma ve çok hedef izleme performansı dahil multistatik radar sistemi işleme hattını göstermektedir.",
+    "demoIframeTitle": "Multistatik Radar Demo",
     "publicationsLabel": "// IEEE YAYINLARI"
   },
   "WearableSensorsPage": {
@@ -331,11 +331,11 @@
   "UnderwaterGlidersPage": {
     "metadata": {
       "title": "Otonom Su Altı Planörleri",
-      "description": "Su altı keşfi ve algılama için uzun dayanıklı otonom platformlar — D7 Technology'nin yaklaşan araştırması."
+      "description": "Su altı keşfi ve algılama için uzun süreli otonom platformlar — D7 Technology'nin yaklaşan araştırması."
     },
     "title": "Otonom Su Altı Planörleri",
-    "subtitle": "Su altı keşfi ve algılama için uzun dayanıklı otonom platformlar",
-    "description": "Uzun dayanıklı okyanus izleme, çevresel veri toplama ve denizaltı algılama için otonom su altı planörü platformlarının geliştirilmesi. Enerji verimli itki, dinamik su altı ortamlarında navigasyon ve gerçek zamanlı veri iletimi üzerine odaklanılmaktadır.",
+    "subtitle": "Su altı keşfi ve algılama için uzun süreli otonom platformlar",
+    "description": "Uzun süreli okyanus izleme, çevresel veri toplama ve denizaltı algılama için otonom su altı planörü platformlarının geliştirilmesi. Enerji verimli itki, dinamik su altı ortamlarında navigasyon ve gerçek zamanlı veri iletimi üzerine odaklanılmaktadır.",
     "prjId": "PRJ-004",
     "sectionLabel": "// OTONOM SİSTEMLER · SU ALTI",
     "statusLabel": "// DURUM: GELİŞTİRMEDE",
