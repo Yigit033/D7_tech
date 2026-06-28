@@ -162,19 +162,18 @@ export default function Navbar() {
         </div>
       </div>
 
-      {/* Mobile menu */}
+      {/* Mobile menu — max-h collapse so it takes zero layout space when closed */}
       <div
         id="mobile-menu"
         ref={mobileMenuRef}
-        className={`md:hidden border-t border-[#1a2540] bg-[#020409] transition-all duration-300 ${
-          mobileOpen
-            ? 'opacity-100 translate-y-0'
-            : 'opacity-0 -translate-y-2 pointer-events-none'
+        className={`md:hidden overflow-hidden bg-[#020409] transition-all duration-300 ease-in-out ${
+          mobileOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0 pointer-events-none'
         }`}
         role="menu"
         aria-hidden={!mobileOpen}
       >
-        <div className="px-4 py-4 space-y-1">
+        {/* border-t lives inside so it's clipped during the height animation */}
+        <div className="border-t border-[#1a2540] px-4 py-4 space-y-1">
           {navLinks.map((link) => (
             <Link
               key={link.href}
