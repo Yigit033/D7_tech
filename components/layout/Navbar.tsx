@@ -12,6 +12,8 @@ export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
   const mobileMenuRef = useRef<HTMLDivElement>(null);
+  // Store scroll position for iOS-compatible scroll lock
+  const scrollYRef = useRef(0);
 
   const closeMobile = useCallback(() => setMobileOpen(false), []);
 
@@ -24,14 +26,26 @@ export default function Navbar() {
     closeMobile();
   }, [pathname, closeMobile]);
 
+  // iOS-compatible scroll lock: body position:fixed preserves fixed children correctly
   useEffect(() => {
     if (mobileOpen) {
-      document.body.style.overflow = 'hidden';
+      scrollYRef.current = window.scrollY;
+      document.body.style.position = 'fixed';
+      document.body.style.top = `-${scrollYRef.current}px`;
+      document.body.style.left = '0';
+      document.body.style.right = '0';
     } else {
-      document.body.style.overflow = '';
+      document.body.style.position = '';
+      document.body.style.top = '';
+      document.body.style.left = '';
+      document.body.style.right = '';
+      window.scrollTo(0, scrollYRef.current);
     }
     return () => {
-      document.body.style.overflow = '';
+      document.body.style.position = '';
+      document.body.style.top = '';
+      document.body.style.left = '';
+      document.body.style.right = '';
     };
   }, [mobileOpen]);
 
@@ -52,12 +66,15 @@ export default function Navbar() {
   const isActive = (href: string) =>
     href === '/' ? pathname === '/' : pathname.startsWith(href);
 
+  // Mobile: always has a background so the navbar is visually grounded (prevents
+  // the "transparent bar scrolling through content" illusion on iOS/Android).
+  // Desktop: transparent at top, frosted glass when scrolled.
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-colors duration-300 ${
-        scrolled
+        scrolled || mobileOpen
           ? 'bg-[#020409]/95 backdrop-blur-md border-b border-[#1a2540]'
-          : 'bg-transparent'
+          : 'bg-[#020409]/85 border-b border-[#1a2540]/40 sm:bg-transparent sm:border-b-0'
       }`}
       role="navigation"
       aria-label={t('mainNavAriaLabel')}
@@ -149,7 +166,7 @@ export default function Navbar() {
       <div
         id="mobile-menu"
         ref={mobileMenuRef}
-        className={`md:hidden border-t border-[#1a2540] bg-[#020409]/98 backdrop-blur-md transition-all duration-300 ${
+        className={`md:hidden border-t border-[#1a2540] bg-[#020409] transition-all duration-300 ${
           mobileOpen
             ? 'opacity-100 translate-y-0'
             : 'opacity-0 -translate-y-2 pointer-events-none'
