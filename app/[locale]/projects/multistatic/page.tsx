@@ -47,7 +47,7 @@ export default async function MultistaticPage({ params }: { params: { locale: st
             {project.tags.map((tag) => <TechTag key={tag} tag={tag} />)}
           </div>
           <div className="mt-8">
-            <ProjectCover src={project.coverImage} alt={project.coverImageAlt} priority />
+            <ProjectCover src={project.coverImage} alt={project.coverImageAlt} priority objectFit={project.coverObjectFit} />
           </div>
         </header>
 

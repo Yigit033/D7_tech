@@ -36,7 +36,7 @@ export default function ProjectCard({ project, index = 0 }: ProjectCardProps) {
         <span className="absolute bottom-3 left-3 w-3 h-3 border-b border-l border-sky-500/20 group-hover:border-sky-500/50 transition-colors" aria-hidden="true" />
 
         <div className="relative mb-5">
-          <ProjectCover src={project.coverImage} alt={project.coverImageAlt} priority={index < 2} />
+          <ProjectCover src={project.coverImage} alt={project.coverImageAlt} priority={index < 2} objectFit={project.coverObjectFit} />
           <div className="absolute inset-0 grid-bg opacity-25 pointer-events-none rounded-sm" aria-hidden="true" />
           <span className="absolute bottom-2 left-2 z-10 font-mono text-[9px] tracking-widest text-sky-500/50 uppercase pointer-events-none">
             {project.id.toUpperCase()}

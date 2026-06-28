@@ -18,6 +18,7 @@ export interface Project {
   /** Path under public/, e.g. /images/projects/wearable-sensors.jpg */
   coverImage: string;
   coverImageAlt: string;
+  coverObjectFit?: 'cover' | 'contain';
   publications?: Publication[];
   youtubeEmbed?: string;
   startDate?: string;
@@ -71,6 +72,7 @@ export const projects: Project[] = [
     category: 'sensing',
     coverImage: '/images/projects/multistatic.jpg',
     coverImageAlt: 'RF and measurement hardware — multi-static radar and signal processing context',
+    coverObjectFit: 'contain',
     description:
       'Multi-static radar research using separated transmitters and receivers to observe targets from multiple aspect angles. This approach improves detection robustness for low-RCS targets and reduces sensitivity to clutter, interference, and stealth shaping.',
     youtubeEmbed: 'https://www.youtube.com/embed/bU7NDo-aLyY?start=3',

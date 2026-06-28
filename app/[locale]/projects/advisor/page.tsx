@@ -103,14 +103,7 @@ export default async function AdvisorPage({ params }: { params: { locale: string
         <section className="mb-12" aria-labelledby="bathymetry-heading">
           <h2 id="bathymetry-heading" className="text-xl font-semibold text-slate-100 mb-4">{t('bathyTitle')}</h2>
           <p className="text-slate-400 leading-relaxed mb-4 text-sm sm:text-base">{t('bathyText1')}</p>
-          <p className="text-slate-400 leading-relaxed mb-6 text-sm sm:text-base">{t('bathyText2')}</p>
-          <figure className="m-0">
-            <div className="relative w-full aspect-video rounded-sm bg-[#0a0f1e] border border-[#1a2540] overflow-hidden">
-              <Image src="/images/projects/bathymetry_mapping.jpg" alt={t('bathyImageAlt')} fill className="object-cover object-center" sizes="(max-width: 896px) 100vw, 896px" />
-              <div className="absolute inset-0 pointer-events-none bg-gradient-to-t from-[#020409]/50 via-transparent to-transparent" aria-hidden="true" />
-            </div>
-            <figcaption className="mt-3 text-xs text-slate-600 text-center sm:text-left">{t('bathyCaption')}</figcaption>
-          </figure>
+          <p className="text-slate-400 leading-relaxed text-sm sm:text-base">{t('bathyText2')}</p>
         </section>
       </div>
     </article>
