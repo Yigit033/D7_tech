@@ -29,7 +29,7 @@ export default async function AboutPage({ params }: { params: { locale: string }
   const t = await getTranslations({ locale: params.locale, namespace: 'AboutPage' });
 
   const team: TeamMember[] = [
-    { name: t('team.ahmet.name'), role: t('team.ahmet.role'), initials: 'AG', linkedin: 'https://www.linkedin.com/' },
+    { name: t('team.ahmet.name'), role: t('team.ahmet.role'), initials: 'AG', linkedin: 'https://www.linkedin.com/in/ahmet-g%C3%BCne%C5%9F-phd-mba/' },
     { name: t('team.bilal.name'), role: t('team.bilal.role'), initials: 'BB', linkedin: 'https://www.linkedin.com/in/bilal-bayram-6175a5307/' },
     { name: t('team.berkant.name'), role: t('team.berkant.role'), initials: 'BK', linkedin: 'https://www.linkedin.com/in/berkant-kirikkanat-7a1934227/' },
     { name: t('team.fehim.name'), role: t('team.fehim.role'), initials: 'FK', linkedin: 'https://www.linkedin.com/in/fehim-ku%C5%9F-a19006131/' },
