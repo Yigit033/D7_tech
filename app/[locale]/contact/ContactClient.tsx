@@ -4,7 +4,7 @@ import { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { z } from 'zod';
-import { Loader as Loader2, CircleCheck as CheckCircle, MapPin, Globe, Linkedin } from 'lucide-react';
+import { Loader as Loader2, CircleCheck as CheckCircle, MapPin, Linkedin } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useTranslations } from 'next-intl';
 import SectionLabel from '@/components/common/SectionLabel';
@@ -60,7 +60,6 @@ export default function ContactClient() {
   };
 
   const contactInfo = [
-    { icon: Globe, label: t('websiteLabel'), value: 'd7tech.net', href: 'https://d7tech.net' },
     { icon: MapPin, label: t('locationLabel'), value: t('locationValue'), href: null },
   ];
 

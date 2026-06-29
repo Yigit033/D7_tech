@@ -127,7 +127,6 @@ export default function Footer() {
               ))}
             </ul>
             <div className="mt-5 pt-5 border-t border-[#1a2540]">
-              <p className="text-xs text-slate-600 font-mono">d7tech.net</p>
               <p className="text-xs text-slate-600 mt-1">Istanbul, Turkiye</p>
             </div>
           </div>
