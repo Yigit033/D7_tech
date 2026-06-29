@@ -171,7 +171,8 @@
       "bilal": { "name": "Bilal Bayram", "role": "Elektronik Mühendisi" },
       "berkant": { "name": "Berkant Kırıkkant", "role": "Sistem Mühendisi" },
       "fehim": { "name": "Fehim Kuş", "role": "Mekatronik Mühendisi" },
-      "yigit": { "name": "Yiğit Tilaver", "role": "Yazılım Mühendisi" }
+      "yigit": { "name": "Yiğit Tilaver", "role": "Yazılım Mühendisi" },
+      "yusuf": { "name": "Yusuf Erkoç", "role": "Makine Mühendisliği Öğrencisi" }
     }
   },
   "CareersPage": {
